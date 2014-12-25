@@ -1,0 +1,13 @@
+{
+  "name": "trewbrews-calc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "author": "sveto.n@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+      "lodash": "latest",
+      "hbs": "latest",
+      "express": "latest"
+  }
+}

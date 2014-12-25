@@ -1,0 +1,73 @@
+<html ng-app="trewbrews">
+  <head>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+    <script src="src/trewbrews.js"></script>
+  </head>
+
+  <body>
+    <div ng-controller="calculator">
+      <label>Batch size</label>
+      <input ng-model="size" type="text" name="size"/> liters
+      <hr>
+
+      <label>Boil time</label>
+      <input ng-model="time" type="text" name="time"/> minutes
+      <hr>
+
+      <label>Brewhouse efficiency</label>
+      <input ng-model="efficiency" type="text" name="efficiency"/> %
+      <hr>
+
+      <label>Fermentable 1</label>
+      <select ng-model="fermentable1" name="fermentable1">
+        {{#each fermentables}}
+          <option value="{{data}}">{{name}}</option>
+        {{/each}}
+      </select>
+      <input ng-model="fsize1" type="text" name="fsize1"> kg
+      <br>
+
+      <label>Fermentable 2</label>
+      <select ng-model="fermentable2" name="fermentable2">
+        {{#each fermentables}}
+          <option value="{{data}}">{{name}}</option>
+        {{/each}}
+      </select>
+      <input ng-model="fsize2" type="text" name="fsize2"> kg
+      <hr>
+
+      <label>Hops</label>
+      <select ng-model="hops" name="hops">
+        {{#each hops}}
+          <option value="{{name}}">{{name}}</option>
+        {{/each}}
+      </select>
+      <input ng-model="hsize" type="text" name="hsize"> g
+      <hr>
+
+
+      <label>Yeast</label>
+      <select ng-model="yeast" name="yeast">
+        {{#each yeast}}
+          <option value="{{name}}">{{name}}</option>
+        {{/each}}
+      </select>
+      <hr>
+
+      <label>Original gravity: <label>
+      <span ng-model="og" id="og"><span>
+      <br>
+      <label>Final gravity: <label>
+      <span ng-model="fg" id="fg"><span>
+      <br>
+      <label>ABV: <label>
+      <span ng-model="abv" id="abv"><span>
+      <br>
+      <label>IBU: <label>
+      <span ng-model="ibu" id="ibu"><span>
+      <br>
+      <label>SRM: <label>
+      <input ng-model="srm" id="srm" readonly="readonly">
+      <br>
+  </body>
+</html>
