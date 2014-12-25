@@ -7,21 +7,25 @@ trewbrews.config(function($interpolateProvider) {
 
 trewbrews.controller('calculator', function ($scope) {
     $scope.$watchGroup(['fermentable1', 'fermentable2', 'fsize1', 'fsize2', 'size'], function (vals) {
-        var f1, f2, mcu, fsize1, fsize2, batchSize;
+        var f1, f2, mcu, mcu1, mcu2, fsize1, fsize2, batchSize;
 
-        if (vals[0]) {
-            f1 = JSON.parse(vals[0]);
-        }
+        f1 = vals[0] && JSON.parse(vals[0]);
+        f2 = vals[1] && JSON.parse(vals[1]);
 
-        if (vals[1]) {
-            f2 = JSON.parse(vals[1]);
-        }
-
-        fsize1 = JSON.parse($scope.fsize1);
-        fsize2 = $scope.fsize2;
+        fsize1 = $scope.fsize1 && JSON.parse($scope.fsize1);
+        fsize2 = $scope.fsize2 && JSON.parse($scope.fsize2);
         batchSize = JSON.parse($scope.size);
 
-        mcu = (f1.color * kgsToLbs(fsize1)) / litersToGallons(batchSize);
+        mcu1 = f1 && (f1.color * kgsToLbs(fsize1)) / litersToGallons(batchSize);
+        mcu2 = f2 && (f2.color * kgsToLbs(fsize2)) / litersToGallons(batchSize);
+
+        if (mcu1 && mcu2) {
+            mcu = (mcu1 + mcu2) / 2;
+        } else if (mcu1) {
+            mcu = mcu1;
+        } else if (mcu2) {
+            mcu = mcu2;
+        }
         $scope.srm = round(1.4922 * (Math.pow(mcu, 0.6859)));
     });
 
