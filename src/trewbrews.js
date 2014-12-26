@@ -5,7 +5,7 @@ trewbrews.config(function($interpolateProvider) {
     $interpolateProvider.endSymbol('}]}');
 });
 
-trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', function ($scope, srm, gravity) {
+trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'utils', function ($scope, srm, gravity, utils) {
     $scope.size = 20;
     $scope.time = 60;
     $scope.efficiency = 75;
@@ -43,8 +43,9 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', function ($scope
 
         grav = gravity.calculateGravity([f1, f2], [fsize1, fsize2], yeast, batchSize, efficiency);
 
-        $scope.og = grav.og;
-        $scope.fg = grav.fg;
+        $scope.og = utils.round(grav.og);
+        $scope.fg = utils.round(grav.fg);
+        $scope.abv = utils.round(gravity.calculateAbv(grav));
     });
 
     $scope.srmColor = function () {
