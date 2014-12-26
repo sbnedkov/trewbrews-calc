@@ -4,7 +4,7 @@ var hbs = require('hbs');
 
 var fermentables = require('./data/fermentable.json');
 var hops = require('./data/hop.json');
-var yeast = require('./data/yeast.json');
+var yeasts = require('./data/yeast.json');
 
 var app = express();
 
@@ -20,8 +20,18 @@ app.get('/', function (req, res) {
                 data: JSON.stringify(fermentable)
             };
         }),
-        hops: hops,
-        yeast: yeast
+        hops: _.map(hops, function (hop) {
+            return {
+                name: hop.name,
+                data: JSON.stringify(hop)
+            };
+        }),
+        yeasts: _.map(yeasts, function (yeast) {
+            return {
+                name: yeast.name,
+                data: JSON.stringify(yeast)
+            };
+        })
     });
 });
 

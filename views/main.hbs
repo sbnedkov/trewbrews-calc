@@ -4,7 +4,9 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
     <script src="src/trewbrews.js"></script>
     <script src="src/srm.js"></script>
+    <script src="src/gravity.js"></script>
     <script src="src/utils.js"></script>
+    <script src="src/polynomial.js"></script>
   </head>
 
   <body>
@@ -42,7 +44,7 @@
       <label>Hops</label>
       <select ng-model="hops" name="hops">
         {{#each hops}}
-          <option value="{{name}}">{{name}}</option>
+          <option value="{{data}}">{{name}}</option>
         {{/each}}
       </select>
       <input ng-model="hsize" type="text" name="hsize"> g
@@ -51,17 +53,17 @@
 
       <label>Yeast</label>
       <select ng-model="yeast" name="yeast">
-        {{#each yeast}}
-          <option value="{{name}}">{{name}}</option>
+        {{#each yeasts}}
+          <option value="{{data}}">{{name}}</option>
         {{/each}}
       </select>
       <hr>
 
       <label>Original gravity: <label>
-      <span ng-model="og" id="og"><span>
+      <input ng-model="og" id="og" readonly="readonly">
       <br>
       <label>Final gravity: <label>
-      <span ng-model="fg" id="fg"><span>
+      <input ng-model="fg" id="fg" readonly="readonly">
       <br>
       <label>ABV: <label>
       <span ng-model="abv" id="abv"><span>
