@@ -28,6 +28,20 @@
       <input ng-model="efficiency" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="efficiency"/> %
       <hr>
 
+      <label>Fermentables</label>
+      <br>
+      <button ng-click="addFermentable();">Add fermentable</button>
+      <br>
+      <div ng-repeat="fermentable in fermentablesarr">
+        <select ng-model="fermentable.fermentable">
+          {{#each fermentables}}
+            <option value="{{data}}">{{name}}</option>
+          {{/each}}
+        </select>
+        <input ng-model="fermentable.size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/"> kg
+        <br>
+      </div>
+      <!--
       <label>Fermentable 1</label>
       <select ng-model="fermentable1" name="fermentable1">
         {{#each fermentables}}
@@ -36,23 +50,7 @@
       </select>
       <input ng-model="fsize1" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="fsize1"> kg
       <br>
-
-      <label>Fermentable 2</label>
-      <select ng-model="fermentable2" name="fermentable2">
-        {{#each fermentables}}
-          <option value="{{data}}">{{name}}</option>
-        {{/each}}
-      </select>
-      <input ng-model="fsize2" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="fsize2"> kg
-      <br>
-
-      <label>Fermentable 3</label>
-      <select ng-model="fermentable3" name="fermentable3">
-        {{#each fermentables}}
-          <option value="{{data}}">{{name}}</option>
-        {{/each}}
-      </select>
-      <input ng-model="fsize3" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="fsize3"> kg
+      -->
       <hr>
 
       <label>Hops</label>
