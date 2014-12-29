@@ -39,18 +39,9 @@
           {{/each}}
         </select>
         <input ng-model="fermentable.size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/"> kg
+        <a href="javascript:;" ng-click="deleteFermentable($index);">Delete</a>
         <br>
       </div>
-      <!--
-      <label>Fermentable 1</label>
-      <select ng-model="fermentable1" name="fermentable1">
-        {{#each fermentables}}
-          <option value="{{data}}">{{name}}</option>
-        {{/each}}
-      </select>
-      <input ng-model="fsize1" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="fsize1"> kg
-      <br>
-      -->
       <hr>
 
       <label>Hops</label>

@@ -16,6 +16,10 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
         $scope.fermentablesarr.push({});
     };
 
+    $scope.deleteFermentable = function (idx) {
+        $scope.fermentablesarr.splice(idx, 1);
+    };
+
     // Watch for color change
     $scope.$watch('[fermentablesarr, boilsize, size]', function (vals) {
         var boilSize, batchSize;
