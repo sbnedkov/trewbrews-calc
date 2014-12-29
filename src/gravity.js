@@ -16,9 +16,9 @@ trewbrews.service('gravity', ['utils', function (utils) {
 
         _.each(fermentables, function (fermentable, idx) {
              // TODO: if preboil and not is mashed - continue
-             if (fermentable.type === "Sugar" || fermentable.type === "Extract") {
+             if (fermentable.ftype === "Sugar" || fermentable.ftype === "Extract") {
                  sugarKgIgnoreEfficiency += equivSucroseInKg(fermentable, sizes[idx]);
-                 if (fermentable.type !== "Sugar") {
+                 if (fermentable.ftype !== "Sugar") {
                      nonFermentableSugarKg += equivSucroseInKg(fermentable, sizes[idx]);
                  }
              } else {
@@ -33,16 +33,48 @@ trewbrews.service('gravity', ['utils', function (utils) {
         };
     }
 
-    gravity.calculateGravity = function (fermentables, sizes, yeasts, size, efficiency) {
+    gravity.calculateVolume = function (boilSize, batchSize, fermentables, sizes) {
+        var vol = 0, finalVolume, finalVolumeNoLosses, postBoilVolume;
+
+        _.each(fermentables, function (fermentable, idx) {
+            if (fermentable.ftype === "Extract") {
+                vol += sizes[idx] / 1.412;
+            } else if (fermentable.ftype === "Sugar") {
+                vol += sizes[idx] / 1.587;
+            } else if (fermentable.ftype === "Dry Extract") {
+                vol += sizes[idx] / 1.587;
+            }
+        });
+
+        if (vol === 0) {
+            vol = boilSize;
+        }
+
+        finalVolumeNoLosses = batchSize;
+
+        // TODO: use equipment
+        finalVolume = vol - 4;
+
+        // TODO: use equipment
+        postBoilVolume = batchSize;
+
+        return {
+            finalVolume: finalVolume,
+            finalVolumeNoLosses: finalVolumeNoLosses
+        };
+    };
+
+    gravity.calculateGravity = function (fermentables, sizes, yeasts, boilSize, size, efficiency) {
         var og, fg;
         var sugarKg;
         var plato;
-        var finalVolumeNoLosses = size;
+        fermentables = _.filter(fermentables, function (fermentable) {
+            return fermentable;
+        });
+        var finalVolumeNoLosses = gravity.calculateVolume(boilSize, size, fermentables, sizes).finalVolumeNoLosses;
         var points, fermPoints, fermKg, ogFermentable, fgFermentable;
         var attenuation = 0;
-        var ppg = pointsPerGallon(_.filter(fermentables, function (fermentable) {
-            return fermentable;
-        }), sizes);
+        var ppg = pointsPerGallon(fermentables, sizes);
 
         yeasts = yeasts ? [yeasts] : [];
 

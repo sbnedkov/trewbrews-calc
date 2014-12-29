@@ -4,7 +4,7 @@ trewbrews.service('srm', ['utils', function (utils) {
     var srm = {
     };
 
-    srm.calculateSrm = function (fermentables, fermentableSizes, batchSize) {
+    srm.calculateSrm = function (fermentables, fermentableSizes, boilSize, batchSize) {
         var mcu = _.reduce(fermentables, function (acc, f, key) {
             acc += f ? (f.color * 8.34538 * fermentableSizes[key]) / batchSize : 0;
             return acc;
