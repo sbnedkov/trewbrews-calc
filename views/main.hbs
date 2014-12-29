@@ -13,19 +13,19 @@
   <body>
     <div ng-controller="calculator">
       <label>Boil size</label>
-      <input ng-model="boilsize" type="text" name="boilsize"/> liters
+      <input ng-model="boilsize" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="boilsize"/> liters
       <br>
 
       <label>Batch size</label>
-      <input ng-model="size" type="text" name="size"/> liters
+      <input ng-model="size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="size"/> liters
       <hr>
 
       <label>Boil time</label>
-      <input ng-model="time" type="text" name="time"/> minutes
+      <input ng-model="time" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="time"/> minutes
       <hr>
 
       <label>Brewhouse efficiency</label>
-      <input ng-model="efficiency" type="text" name="efficiency"/> %
+      <input ng-model="efficiency" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="efficiency"/> %
       <hr>
 
       <label>Fermentable 1</label>
@@ -34,7 +34,7 @@
           <option value="{{data}}">{{name}}</option>
         {{/each}}
       </select>
-      <input ng-model="fsize1" type="text" name="fsize1"> kg
+      <input ng-model="fsize1" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="fsize1"> kg
       <br>
 
       <label>Fermentable 2</label>
@@ -43,7 +43,7 @@
           <option value="{{data}}">{{name}}</option>
         {{/each}}
       </select>
-      <input ng-model="fsize2" type="text" name="fsize2"> kg
+      <input ng-model="fsize2" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="fsize2"> kg
       <br>
 
       <label>Fermentable 3</label>
@@ -52,7 +52,7 @@
           <option value="{{data}}">{{name}}</option>
         {{/each}}
       </select>
-      <input ng-model="fsize3" type="text" name="fsize3"> kg
+      <input ng-model="fsize3" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="fsize3"> kg
       <hr>
 
       <label>Hops</label>
@@ -61,7 +61,7 @@
           <option value="{{data}}">{{name}}</option>
         {{/each}}
       </select>
-      <input ng-model="hsize" type="text" name="hsize"> g
+      <input ng-model="hsize" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="hsize"> g
       <hr>
 
 
