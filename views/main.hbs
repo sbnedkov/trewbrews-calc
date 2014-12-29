@@ -40,6 +40,15 @@
         {{/each}}
       </select>
       <input ng-model="fsize2" type="text" name="fsize2"> kg
+      <br>
+
+      <label>Fermentable 3</label>
+      <select ng-model="fermentable3" name="fermentable3">
+        {{#each fermentables}}
+          <option value="{{data}}">{{name}}</option>
+        {{/each}}
+      </select>
+      <input ng-model="fsize3" type="text" name="fsize3"> kg
       <hr>
 
       <label>Hops</label>

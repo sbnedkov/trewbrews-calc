@@ -11,37 +11,41 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
     $scope.efficiency = 75;
 
     // Watch for color change
-    $scope.$watchGroup(['fermentable1', 'fermentable2', 'fsize1', 'fsize2', 'size'], function (vals) {
-        var f1, f2, fsize1, fsize2, batchSize;
+    $scope.$watchGroup(['fermentable1', 'fermentable2', 'fermentable3', 'fsize1', 'fsize2', 'fsize3', 'size'], function (vals) {
+        var f1, f2, f3, fsize1, fsize2, fsize3, batchSize;
 
         f1 = vals[0] && JSON.parse(vals[0]);
         f2 = vals[1] && JSON.parse(vals[1]);
+        f3 = vals[2] && JSON.parse(vals[2]);
 
         fsize1 = $scope.fsize1 && JSON.parse($scope.fsize1);
         fsize2 = $scope.fsize2 && JSON.parse($scope.fsize2);
+        fsize3 = $scope.fsize3 && JSON.parse($scope.fsize3);
 
         batchSize = $scope.size && JSON.parse($scope.size);
 
-        $scope.srm = srm.calculateSrm([f1, f2], [fsize1, fsize2], batchSize);
+        $scope.srm = srm.calculateSrm([f1, f2, f3], [fsize1, fsize2, fsize3], batchSize);
     });
 
     // Watch for gravity change
-    $scope.$watchGroup(['fermentable1', 'fermentable2', 'fsize1', 'fsize2', 'yeast', 'size', 'efficiency'], function (vals) {
-        var f1, f2, fsize1, fsize2, yeast, batchSize, efficiency;
+    $scope.$watchGroup(['fermentable1', 'fermentable2', 'fermentable3', 'fsize1', 'fsize2', 'fsize3', 'yeast', 'size', 'efficiency'], function (vals) {
+        var f1, f2, f3, fsize1, fsize2, fsize3, yeast, batchSize, efficiency;
         var grav;
 
         f1 = vals[0] && JSON.parse(vals[0]);
         f2 = vals[1] && JSON.parse(vals[1]);
+        f3 = vals[2] && JSON.parse(vals[2]);
 
         fsize1 = $scope.fsize1 && JSON.parse($scope.fsize1);
         fsize2 = $scope.fsize2 && JSON.parse($scope.fsize2);
+        fsize3 = $scope.fsize3 && JSON.parse($scope.fsize3);
 
         yeast = $scope.yeast && JSON.parse($scope.yeast);
 
         batchSize = $scope.size && JSON.parse($scope.size);
         efficiency = $scope.efficiency && JSON.parse($scope.efficiency);
 
-        grav = gravity.calculateGravity([f1, f2], [fsize1, fsize2], yeast, batchSize, efficiency);
+        grav = gravity.calculateGravity([f1, f2, f3], [fsize1, fsize2, fsize3], yeast, batchSize, efficiency);
 
         $scope.og = utils.round(grav.og);
         $scope.fg = utils.round(grav.fg);
@@ -49,14 +53,16 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
     });
 
     // Watch for IBU change
-    $scope.$watchGroup(['fermentable1', 'fermentable2', 'fsize1', 'fsize2', 'hops', 'hsize', 'size', 'time'], function (vals) {
-        var f1, f2, fsize1, fsize2, hops, hsize, batchSize, time;
+    $scope.$watchGroup(['fermentable1', 'fermentable2', 'fermentable3', 'fsize1', 'fsize2', 'fsize3', 'hops', 'hsize', 'size', 'time'], function (vals) {
+        var f1, f2, f3, fsize1, fsize2, fsize3, hops, hsize, batchSize, time;
 
         f1 = vals[0] && JSON.parse(vals[0]);
         f2 = vals[1] && JSON.parse(vals[1]);
+        f3 = vals[2] && JSON.parse(vals[2]);
 
         fsize1 = $scope.fsize1 && JSON.parse($scope.fsize1);
         fsize2 = $scope.fsize2 && JSON.parse($scope.fsize2);
+        fsize3 = $scope.fsize3 && JSON.parse($scope.fsize3);
 
         hops = $scope.hops && JSON.parse($scope.hops);
         hsize = $scope.hsize && JSON.parse($scope.hsize);
@@ -64,7 +70,7 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
         batchSize = $scope.size && JSON.parse($scope.size);
         time = $scope.time && JSON.parse($scope.time);
 
-        $scope.ibu = ibu.calculateIbu(hops, hsize, [f1, f2], [fsize1, fsize2], batchSize, time, $scope.og);
+        $scope.ibu = ibu.calculateIbu(hops, hsize, [f1, f2, f3], [fsize1, fsize2, fsize3], batchSize, time, $scope.og);
     });
 
     $scope.srmColor = function () {
