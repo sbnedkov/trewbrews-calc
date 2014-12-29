@@ -6,8 +6,6 @@ trewbrews.service('ibu', ['utils', function (utils) {
 
     ibu.calculateIbu = function (hops, sizes, fermentables, fsizes, boilSize, batchSize, boilTime, og) {
         var ibus = 0;
-        hops = hops ? [hops] : [];
-        sizes = sizes ? [sizes] : [];
         fermentables = _.filter(fermentables, function (fermentable) {
             return fermentable;
         });

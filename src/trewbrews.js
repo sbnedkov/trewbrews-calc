@@ -11,13 +11,22 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
     $scope.time = 60;
     $scope.efficiency = 75;
     $scope.fermentablesarr = [];
+    $scope.hopsarr = [];
 
     $scope.addFermentable = function () {
         $scope.fermentablesarr.push({});
     };
 
+    $scope.addHop = function () {
+        $scope.hopsarr.push({});
+    };
+
     $scope.deleteFermentable = function (idx) {
         $scope.fermentablesarr.splice(idx, 1);
+    };
+
+    $scope.deleteHop = function (idx) {
+        $scope.hopsarr.splice(idx, 1);
     };
 
     // Watch for color change
@@ -54,18 +63,16 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
     }, true);
 
     // Watch for IBU change
-    $scope.$watch('[fermentablesarr, hops, hsize, boilsize, size, time]', function (vals) {
-        var hops, hsize, boilSize, batchSize, time;
-
-
-        hops = $scope.hops && JSON.parse($scope.hops);
-        hsize = $scope.hsize && JSON.parse($scope.hsize);
+    $scope.$watch('[fermentablesarr, hopsarr, boilsize, size, time]', function (vals) {
+        var boilSize, batchSize, time;
+        var tmp;
 
         boilSize = $scope.boilsize && JSON.parse($scope.boilsize);
         batchSize = $scope.size && JSON.parse($scope.size);
         time = $scope.time && JSON.parse($scope.time);
 
-        $scope.ibu = utils.round(ibu.calculateIbu(hops, hsize, getFermentables(), getSizes(), boilSize, batchSize, time, $scope.og));
+        tmp = ibu.calculateIbu(getHops(), getHopsSizes(), getFermentables(), getSizes(), boilSize, batchSize, time, $scope.og);
+        $scope.ibu = utils.round(tmp);
     }, true);
 
     function getFermentables () {
@@ -77,6 +84,18 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
     function getSizes () {
         return _.map($scope.fermentablesarr, function (f) {
             return parseInt(f.size);
+        });
+    }
+
+    function getHops () {
+        return _.map($scope.hopsarr, function (h) {
+            return JSON.parse(h.hop || "{}");
+        });
+    }
+
+    function getHopsSizes () {
+        return _.map($scope.hopsarr, function (h) {
+            return parseInt(h.size);
         });
     }
 }]);
