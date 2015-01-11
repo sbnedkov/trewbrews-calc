@@ -2,10 +2,9 @@ var _ = require('lodash');
 var express = require('express');
 var hbs = require('hbs');
 
-var fermentables = require('./data/fermentable.json');
+var fermentables = require('./data/fermentables.json');
 var hops = require('./data/hop.json');
 var yeasts = require('./data/yeast.json');
-var equipments = require('./data/equipment.json');
 
 var app = express();
 
@@ -31,12 +30,6 @@ app.get('/', function (req, res) {
             return {
                 name: yeast.name,
                 data: JSON.stringify(yeast)
-            };
-        }),
-        equipments: _.map(equipments, function (equipment) {
-            return {
-                name: equipment.name,
-                data: JSON.stringify(equipment)
             };
         })
     });

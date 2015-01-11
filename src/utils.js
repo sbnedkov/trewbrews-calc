@@ -1,6 +1,6 @@
 var trewbrews = angular.module('trewbrews');
 
-trewbrews.service('utils', ['polynomial', function (Polynomial) {
+trewbrews.service('utils', [function () {
     var utils = {
     };
 
@@ -20,14 +20,6 @@ trewbrews.service('utils', ['polynomial', function (Polynomial) {
         var waterKg = volume  - sugarKg / 1.587;
 
         return sugarKg / (sugarKg + waterKg) * 100;
-    };
-
-    utils.platoToSg = function (plato) {
-        var polynomial = new Polynomial([-616.868, 1111.14, -630.272, 135.997]);
-
-        polynomial.coeffs[0] -= plato;
-
-        return polynomial.root(1.000, 1.050);
     };
 
     return utils;

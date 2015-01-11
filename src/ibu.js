@@ -14,9 +14,10 @@ trewbrews.service('ibu', ['utils', function (utils) {
             ibus += ibuFromHop(hop, sizes[idx], batchSize, boilTime, og, equipment);
         });
 
-        _.each(fermentables, function (fermentable, idx) {
-            ibus += fermentable.ibu_gal_per_lb * (fsizes[idx] / batchSize) / 8.34538;
-        });
+        // TODO: figure out if we have this data at all
+//        _.each(fermentables, function (fermentable, idx) {
+//            ibus += fermentable.ibu_gal_per_lb * (fsizes[idx] / batchSize) / 8.34538;
+//        });
 
         return ibus;
     };
