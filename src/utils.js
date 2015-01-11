@@ -12,6 +12,10 @@ trewbrews.service('utils', [function () {
         return liters * 0.264172052;
     };
 
+    utils.gramsToOz = function (grams) {
+        return grams * 0.0352739619;
+    };
+
     utils.round = function (n) {
         return Math.round(1000 * n) / 1000;
     };
