@@ -4,7 +4,7 @@ var hbs = require('hbs');
 
 var fermentables = require('./data/fermentables.json');
 var hops = require('./data/hop.json');
-var yeasts = require('./data/yeast.json');
+var yeasts = require('./data/yeasts.json');
 
 var app = express();
 

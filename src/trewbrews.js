@@ -49,7 +49,7 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
         var grav;
 
 
-        yeast = $scope.yeast && JSON.parse($scope.yeast);
+        yeast = $scope.yeast && [JSON.parse($scope.yeast)] || [];
 
         boilSize = $scope.boilsize && JSON.parse($scope.boilsize);
         batchSize = $scope.size && JSON.parse($scope.size);

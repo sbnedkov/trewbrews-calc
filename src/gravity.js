@@ -19,12 +19,13 @@ trewbrews.service('gravity', ['utils', function (utils) {
         fermentables = _.filter(fermentables, function (fermentable) {
             return fermentable;
         });
+        yeasts = _.filter(yeasts, function (yeast) {
+            return yeast.attenuation;
+        });
 
         var og, fg;
         var attenuation = 0;
         var p = pointsPerGallon(fermentables, sizes, size, efficiency);
-
-        yeasts = yeasts ? [yeasts] : [];
 
         og = p / 1000 + 1;
 

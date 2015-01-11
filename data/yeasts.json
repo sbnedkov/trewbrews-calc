@@ -1,0 +1,1674 @@
+[
+    {
+        "attenuation": 72,
+        "description": "Top-fermenting strain for Belgian witbier. Spicy and li",
+        "flocculation": "Low",
+        "name": "Brewferm Blanche Ale Yeast",
+        "temperature": "64\u00baF \u2013 73\u00baF",
+        "value": 0
+    },
+    {
+        "attenuation": 76,
+        "description": "A dry lager yeast. Flocculation: high. Attenuation: hig",
+        "flocculation": "High",
+        "name": "Brewferm Lager Yeast",
+        "temperature": "50\u00baF \u2013 59\u00baF",
+        "value": 1
+    },
+    {
+        "attenuation": 72,
+        "description": "A good all-round yeast for a variety of ales. Produces",
+        "flocculation": "Medium",
+        "name": "Coopers Ale Yeast",
+        "temperature": "65\u00baF \u2013 75\u00baF",
+        "value": 2
+    },
+    {
+        "attenuation": 75,
+        "description": "Abbaye is an ale yeast of Belgian origin selected for i",
+        "flocculation": "Low",
+        "name": "Danstar Abbaye",
+        "temperature": "63\u00baF \u2013 77\u00baF",
+        "value": 2.125
+    },
+    {
+        "attenuation": 80,
+        "description": "Belle Saison is an ale yeast of Belgian origin selected",
+        "flocculation": "Low",
+        "name": "Danstar Belle Saison Yeast",
+        "temperature": "63\u00baF \u2013 77\u00baF",
+        "value": 2.25
+    },
+    {
+        "attenuation": 72.5,
+        "description": "BRY-97 American West Coast Yeast was selected from the",
+        "flocculation": "Medium \u2013 Hig",
+        "name": "Danstar BRY-97 American West C",
+        "temperature": "62\u00baF \u2013 72\u00baF",
+        "value": 2.5
+    },
+    {
+        "attenuation": null,
+        "description": "CBC-1 has been especially selected for it's refermentat",
+        "flocculation": "Medium \u2013 Hig12%",
+        "name": "Danstar CBC-1 Cask and Bottle",
+        "temperature": "60\u00baF \u2013 70\u00baF",
+        "value": 2.75
+    },
+    {
+        "attenuation": 74,
+        "description": "Diamond Lager yeast originated in Germany and is used b",
+        "flocculation": "Medium \u2013 Hig",
+        "name": "Danstar Diamond Lager Yeast",
+        "temperature": "50\u00baF \u2013 59\u00baF",
+        "value": 3
+    },
+    {
+        "attenuation": 74,
+        "description": "Munich German Wheat Beer yeast originated in Bavaria an   Weizen",
+        "flocculation": "Low",
+        "name": "Danstar Munich Wheat Beer Yeas",
+        "temperature": "60\u00baF \u2013 70\u00baF",
+        "value": 4
+    },
+    {
+        "attenuation": 76,
+        "description": "Nottingham British Ale yeast is a single strain selecte",
+        "flocculation": "Medium \u2013 Hig",
+        "name": "Danstar Nottingham Ale Yeast",
+        "temperature": "60\u00baF \u2013 70\u00baF",
+        "value": 5
+    },
+    {
+        "attenuation": 70,
+        "description": "Windsor British Ale yeast originated in the UK and is u   Bitter",
+        "flocculation": "Low",
+        "name": "Danstar Windsor Ale Yeast",
+        "temperature": "60\u00baF \u2013 70\u00baF",
+        "value": 6
+    },
+    {
+        "attenuation": null,
+        "description": "A mixed culture of wild yeast and lactic bacteria to em",
+        "flocculation": "",
+        "name": "ECY01 East Coast Yeast BugFarm",
+        "temperature": "",
+        "value": 6.05
+    },
+    {
+        "attenuation": null,
+        "description": "A unique blend of yeast and lactic bacteria producing s",
+        "flocculation": "",
+        "name": "ECY02 East Coast Yeast Flemish",
+        "temperature": "",
+        "value": 6.1
+    },
+    {
+        "attenuation": null,
+        "description": "A saison blend (ECY08) with a pure Brettanomyces isolat",
+        "flocculation": "",
+        "name": "ECY03 East Coast Yeast Farmhou",
+        "temperature": "",
+        "value": 6.15
+    },
+    {
+        "attenuation": null,
+        "description": "The pure Brett strain is also available asECY03-B.",
+        "flocculation": "",
+        "name": "ECY03-B East Coast Yeast Brett",
+        "temperature": "",
+        "value": 6.17
+    },
+    {
+        "attenuation": null,
+        "description": "Originally isolated in beer from Adelaide, Australia. T",
+        "flocculation": "",
+        "name": "ECY04 East Coast Yeast Brett A",
+        "temperature": "",
+        "value": 6.2
+    },
+    {
+        "attenuation": null,
+        "description": "Isolated in Belgian stout and recovered from a cell ban",
+        "flocculation": "",
+        "name": "ECY05 East Coast Yeast Brett B",
+        "temperature": "",
+        "value": 6.25
+    },
+    {
+        "attenuation": 78.5,
+        "description": "Leaves a fruity profile with woody, oak esters reminisc",
+        "flocculation": "",
+        "name": "ECY07 East Coast Yeast Scottis",
+        "temperature": "60\u00baF \u2013 68\u00baF",
+        "value": 6.3
+    },
+    {
+        "attenuation": 80,
+        "description": "A combination of several saison yeast strains for both",
+        "flocculation": "",
+        "name": "ECY08 East Coast Yeast Saison",
+        "temperature": "75\u00baF \u2013 85\u00baF",
+        "value": 6.35
+    },
+    {
+        "attenuation": 75,
+        "description": "This yeast produces classic Belgian-style ales - robust",
+        "flocculation": "",
+        "name": "ECY09 East Coast Yeast Belgian",
+        "temperature": "66\u00baF \u2013 72\u00baF",
+        "value": 6.4
+    },
+    {
+        "attenuation": 76,
+        "description": "Sourced from a defunct east coast brewery, this pure st",
+        "flocculation": "",
+        "name": "ECY10 East Coast Yeast Old New",
+        "temperature": "60\u00baF \u2013 68\u00baF",
+        "value": 6.45
+    },
+    {
+        "attenuation": 76,
+        "description": "Isolated from the Hainaut region in Belgium, this pure",
+        "flocculation": "",
+        "name": "ECY11 East Coast Yeast Belgian",
+        "temperature": "70\u00baF \u2013 76\u00baF",
+        "value": 6.5
+    },
+    {
+        "attenuation": 78,
+        "description": "Sourced from the same east coast brewery as ECY10, this",
+        "flocculation": "",
+        "name": "ECY12 East Coast Yeast Old New",
+        "temperature": "58\u00baF \u2013 68\u00baF",
+        "value": 6.55
+    },
+    {
+        "attenuation": 75,
+        "description": "Traditional Belgian yeast with a complex, dry, fruity m",
+        "flocculation": "",
+        "name": "ECY13 East Coast Yeast Belgian",
+        "temperature": "66\u00baF \u2013 72\u00baF",
+        "value": 6.6
+    },
+    {
+        "attenuation": 77,
+        "description": "This strain leaves a smooth, full farmhouse character w",
+        "flocculation": "",
+        "name": "ECY14 East Coast Yeast Saison",
+        "temperature": "75\u00baF \u2013 82\u00baF",
+        "value": 6.65
+    },
+    {
+        "attenuation": null,
+        "description": "From one of the oldest breweries in Munich, this pure s",
+        "flocculation": "",
+        "name": "ECY15 East Coast Yeast Munich",
+        "temperature": "46\u00baF \u2013 54\u00baF",
+        "value": 6.7
+    },
+    {
+        "attenuation": 74,
+        "description": "Produces a bold, citrusy character which accentuates mi",
+        "flocculation": "",
+        "name": "ECY17 East Coast Yeast Burton",
+        "temperature": "64\u00baF \u2013 69\u00baF",
+        "value": 6.75
+    },
+    {
+        "attenuation": 68,
+        "description": "This yeast has a complex woody ester and is typically u",
+        "flocculation": "",
+        "name": "ECY18 East Coast Yeast British",
+        "temperature": "60\u00baF \u2013 68\u00baF",
+        "value": 6.8
+    },
+    {
+        "attenuation": null,
+        "description": "SEASONAL (OCT-DEC). With over 20 different isolates com",
+        "flocculation": "",
+        "name": "ECY20 East Coast Yeast BugCoun",
+        "temperature": "",
+        "value": 6.85
+    },
+    {
+        "attenuation": 76.5,
+        "description": "Produces a clean lager-like profile at ale fermentation",
+        "flocculation": "",
+        "name": "ECY21 East Coast Yeast Kolschb",
+        "temperature": "58\u00baF \u2013 66\u00baF",
+        "value": 6.9
+    },
+    {
+        "attenuation": 75,
+        "description": "This yeast exhibits a clean, crisp lager in the traditi",
+        "flocculation": "",
+        "name": "ECY28 East Coast Yeast Kellerb",
+        "temperature": "46\u00baF \u2013 54\u00baF",
+        "value": 6.91
+    },
+    {
+        "attenuation": 74,
+        "description": "A unique ale yeast with an abundance of citrusy esters",
+        "flocculation": "Low",
+        "name": "ECY29 East Coast Yeast Northea",
+        "temperature": "65\u00baF \u2013 70\u00baF",
+        "value": 6.92
+    },
+    {
+        "attenuation": null,
+        "description": "A unique species of Brettanomyces that creates an abund",
+        "flocculation": "",
+        "name": "ECY30 East Coast Yeast Brett N",
+        "temperature": "60\u00baF \u2013 74\u00baF",
+        "value": 6.94
+    },
+    {
+        "attenuation": 80,
+        "description": "Twelve (12) different isolates of Brettanomyces exhibit",
+        "flocculation": "",
+        "name": "ECY34 East Coast Yeast Dirty D",
+        "temperature": "60\u00baF \u2013 74\u00baF",
+        "value": 9.95
+    },
+    {
+        "attenuation": 72,
+        "description": "Good all-purpose ale yeast",
+        "flocculation": "Low",
+        "name": "Muntons Ale Yeast",
+        "temperature": "57\u00baF \u2013 77\u00baF",
+        "value": 7
+    },
+    {
+        "attenuation": 90,
+        "description": "AKA Geisenheim Epernay. A low foaming slower speed ferm",
+        "flocculation": "Medium      12% - 14%",
+        "name": "Red Star Cote Des Blancs",
+        "temperature": "64\u00baF \u2013 68\u00baF",
+        "value": 8
+    },
+    {
+        "attenuation": 68,
+        "description": "A German ale yeast selected for its ability to form a l",
+        "flocculation": "Low",
+        "name": "Safale K-97 Dry Ale",
+        "temperature": "59\u00baF \u2013 75\u00baF",
+        "value": 9
+    },
+    {
+        "attenuation": 72,
+        "description": "A well-known, commercial English ale yeast, selected fo",
+        "flocculation": "High",
+        "name": "Safale S-04 Dry Ale",
+        "temperature": "59\u00baF \u2013 75\u00baF",
+        "value": 10
+    },
+    {
+        "attenuation": 72,
+        "description": "A ready-to-pitch dry American ale yeast. Safale US-05 p",
+        "flocculation": "Low \u2013 Medium",
+        "name": "Safale US-05 Fermentis Dry Ale",
+        "temperature": "59\u00baF \u2013 75\u00baF",
+        "value": 11
+    },
+    {
+        "attenuation": 76,
+        "description": "A very popular general purpose yeast, displaying both v",
+        "flocculation": "Medium      11,5%",
+        "name": "Safbrew S-33 Dry Brewing Yeast",
+        "temperature": "59\u00baF \u2013 75\u00baF",
+        "value": 12
+    },
+    {
+        "attenuation": 76,
+        "description": "A speciality yeast selected for its estery somewhat pep",
+        "flocculation": "Medium      11,5%",
+        "name": "Safbrew T-58 Dry Brewing Yeast",
+        "temperature": "59\u00baF \u2013 75\u00baF",
+        "value": 13
+    },
+    {
+        "attenuation": 76,
+        "description": "A speciality yeast selected for wheat beer fermentation",
+        "flocculation": "Low",
+        "name": "Safbrew WB-06 Dry Brewing Yeas",
+        "temperature": "59\u00baF \u2013 75\u00baF",
+        "value": 14
+    },
+    {
+        "attenuation": 72,
+        "description": "Originating from the H\u00fcrlimann brewery in Switzerland,",
+        "flocculation": "High",
+        "name": "Saflager S-189 Dry Lager",
+        "temperature": "48\u00baF \u2013 59\u00baF",
+        "value": 15
+    },
+    {
+        "attenuation": 72,
+        "description": "This bottom fermenting yeast is originating from the VL",
+        "flocculation": "High",
+        "name": "Saflager S-23 Fermentis Dry La",
+        "temperature": "48\u00baF \u2013 59\u00baF",
+        "value": 16
+    },
+    {
+        "attenuation": 72,
+        "description": "This famous yeast strain from Weihenstephan in Germany",
+        "flocculation": "High",
+        "name": "Saflager W-34/70 Fermentis Dry",
+        "temperature": "48\u00baF \u2013 59\u00baF",
+        "value": 17
+    },
+    {
+        "attenuation": 85,
+        "description": "Amalgamation is the union of our six favorite Brettanom",
+        "flocculation": "Low",
+        "name": "The Yeast Bay - Amalgamation B",
+        "temperature": "65\u00baF \u2013 78\u00baF",
+        "value": 17.01
+    },
+    {
+        "attenuation": 78,
+        "description": "This blend combines Brettanomyces strains isolated from",
+        "flocculation": "Medium - Low",
+        "name": "The Yeast Bay - Beersel Bretta",
+        "temperature": "66\u00baF \u2013 72\u00baF",
+        "value": 17.05
+    },
+    {
+        "attenuation": 80,
+        "description": "This blend combines Brettanomyces strains isolated from",
+        "flocculation": "Medium - Low",
+        "name": "The Yeast Bay - Brussels Brett",
+        "temperature": "66\u00baF \u2013 72\u00baF",
+        "value": 17.1
+    },
+    {
+        "attenuation": 92.5,
+        "description": "Dry Belgian Ale is single strain of Saccharomyces cerev",
+        "flocculation": "Medium - Hig",
+        "name": "The Yeast Bay - Dry Belgian Al",
+        "temperature": "70\u00baF \u2013 76\u00baF",
+        "value": 17.15
+    },
+    {
+        "attenuation": 85,
+        "description": "Farmhouse Sour Ale is a blend of Saccharomyces and Lact",
+        "flocculation": "Medium - Low",
+        "name": "The Yeast Bay - Farmhouse Sour",
+        "temperature": "70\u00baF \u2013 78\u00baF",
+        "value": 17.2
+    },
+    {
+        "attenuation": 79,
+        "description": "Funktown Pale Ale is a blend of our Vermont Ale strain",
+        "flocculation": "Medium - Low",
+        "name": "The Yeast Bay - Funktown Pale",
+        "temperature": "68\u00baF \u2013 74\u00baF",
+        "value": 17.25
+    },
+    {
+        "attenuation": 80,
+        "description": "This blend combines Brettanomyces strains isolated from",
+        "flocculation": "Medium - Low",
+        "name": "The Yeast Bay - Lochristi Bret",
+        "temperature": "66\u00baF \u2013 72\u00baF",
+        "value": 17.3
+    },
+    {
+        "attenuation": 85,
+        "description": "If you dig using a diverse array of unique organisms to",
+        "flocculation": "Medium - Low",
+        "name": "The Yeast Bay - Melange - Sour",
+        "temperature": "68\u00baF \u2013 78\u00baF",
+        "value": 17.35
+    },
+    {
+        "attenuation": 79,
+        "description": "This yeast was isolated from a beer crafted by a well-k",
+        "flocculation": "Medium - Low",
+        "name": "The Yeast Bay - Northeastern A",
+        "temperature": "68\u00baF \u2013 73\u00baF",
+        "value": 17.4
+    },
+    {
+        "attenuation": 79,
+        "description": "A blend of two unique yeast strains isolated from beers",
+        "flocculation": "Medium - Low",
+        "name": "The Yeast Bay - Saison Blend",
+        "temperature": "68\u00baF \u2013 80\u00baF",
+        "value": 17.45
+    },
+    {
+        "attenuation": 80,
+        "description": "This blend combines one of the Saccharomyces strains fr",
+        "flocculation": "Medium - Low",
+        "name": "The Yeast Bay - Saison Brettan",
+        "temperature": "70\u00baF \u2013 78\u00baF",
+        "value": 17.5
+    },
+    {
+        "attenuation": 78.5,
+        "description": "Isolated from a uniquely crafted double IPA out of the",
+        "flocculation": "Medium - Low",
+        "name": "The Yeast Bay - Vermont Ale",
+        "temperature": "64\u00baF \u2013 72\u00baF",
+        "value": 17.55
+    },
+    {
+        "attenuation": 84.5,
+        "description": "Isolated from a unique farmhouse-style ale that hails f",
+        "flocculation": "Medium",
+        "name": "The Yeast Bay - Wallonian Farm",
+        "temperature": "68\u00baF \u2013 78\u00baF",
+        "value": 17.6
+    },
+    {
+        "attenuation": 76.5,
+        "description": "This yeast is famous for its clean flavors, balance and                                        Sierra Nevada",
+        "flocculation": "Medium      10% \u2013 15%",
+        "name": "WLP001 White Labs California A",
+        "temperature": "68\u00baF \u2013 73\u00baF",
+        "value": 18
+    },
+    {
+        "attenuation": 66.5,
+        "description": "A classic ESB strain from one of England's largest inde",
+        "flocculation": "Very High   5% - 10%",
+        "name": "WLP002 White Labs English Ale",
+        "temperature": "65\u00baF \u2013 68\u00baF",
+        "value": 19
+    },
+    {
+        "attenuation": 71.5,
+        "description": "This is the yeast from one of the oldest stout producin",
+        "flocculation": "Medium - Hig8% - 12%",
+        "name": "WLP004 White Labs Irish Ale",
+        "temperature": "65\u00baF \u2013 68\u00baF",
+        "value": 20
+    },
+    {
+        "attenuation": 70.5,
+        "description": "This yeast is a little more attenuative than WLP002. Li",
+        "flocculation": "High        5% - 10%",
+        "name": "WLP005 White Labs British Ale",
+        "temperature": "65\u00baF \u2013 70\u00baF",
+        "value": 21
+    },
+    {
+        "attenuation": 76,
+        "description": "Ferments dry and flocculates very well. Produces a dist",
+        "flocculation": "High        5% - 10%",
+        "name": "WLP006 White Labs Bedford Brit",
+        "temperature": "65\u00baF \u2013 70\u00baF",
+        "value": 22
+    },
+    {
+        "attenuation": 75,
+        "description": "Clean, highly flocculent, and highly attenuative yeast.",
+        "flocculation": "Medium - Hig8% - 12%",
+        "name": "WLP007 White Labs Dry English",
+        "temperature": "65\u00baF \u2013 70\u00baF",
+        "value": 23
+    },
+    {
+        "attenuation": 72.5,
+        "description": "Our \"Brewer Patriot\" strain can be used to reproduce ma",
+        "flocculation": "Medium - Low5% - 10%",
+        "name": "WLP008 White Labs East Coast A",
+        "temperature": "68\u00baF \u2013 73\u00baF",
+        "value": 24
+    },
+    {
+        "attenuation": 72.5,
+        "description": "Produces a clean, malty beer. Pleasant ester character,",
+        "flocculation": "High        5% - 10%",
+        "name": "WLP009 White Labs Australian A",
+        "temperature": "65\u00baF \u2013 70\u00baF",
+        "value": 25
+    },
+    {
+        "attenuation": 67.5,
+        "description": "Malty, Northern European-origin ale yeast. Low ester pr",
+        "flocculation": "Medium      5% - 10%",
+        "name": "WLP011 White Labs European Ale",
+        "temperature": "65\u00baF \u2013 70\u00baF",
+        "value": 26
+    },
+    {
+        "attenuation": 71,
+        "description": "Dry, malty ale yeast. Provides a complex, oakey ester c",
+        "flocculation": "Medium      5% - 10%",
+        "name": "WLP013 White Labs London Ale",
+        "temperature": "66\u00baF \u2013 71\u00baF",
+        "value": 27
+    },
+    {
+        "attenuation": 73.5,
+        "description": "Flavorful British style yeast. Drier finish than many B",
+        "flocculation": "Medium - Hig5% - 10%",
+        "name": "WLP022 White Labs Essex Ale",
+        "temperature": "66\u00baF \u2013 70\u00baF",
+        "value": 28
+    },
+    {
+        "attenuation": 72,
+        "description": "From the famous brewing town of Burton upon Trent, Engl",
+        "flocculation": "Medium      5% - 10%",
+        "name": "WLP023 White Labs Burton Ale",
+        "temperature": "68\u00baF \u2013 73\u00baF",
+        "value": 29
+    },
+    {
+        "attenuation": 72.5,
+        "description": "Scotland is famous for its malty, strong ales. This yea",
+        "flocculation": "Medium      8% - 12%",
+        "name": "WLP028 White Labs Edinburgh Sc",
+        "temperature": "65\u00baF \u2013 70\u00baF",
+        "value": 30
+    },
+    {
+        "attenuation": 75,
+        "description": "From a small brewpub in Cologne, Germany, this yeast wo",
+        "flocculation": "Medium      5% - 10%",
+        "name": "WLP029 White Labs German Ale /",
+        "temperature": "65\u00baF \u2013 69\u00baF",
+        "value": 31
+    },
+    {
+        "attenuation": 68.5,
+        "description": "Traditional Alt yeast from Dusseldorf, Germany. Produce",
+        "flocculation": "Medium      5% - 10%",
+        "name": "WLP036 White Labs Dusseldorf A",
+        "temperature": "65\u00baF \u2013 69\u00baF",
+        "value": 32
+    },
+    {
+        "attenuation": 70,
+        "description": "This yeast produces a beer that is malty, but well-bala",
+        "flocculation": "High        8% - 12%",
+        "name": "WLP037 White Labs Yorkshire Sq",
+        "temperature": "65\u00baF \u2013 69\u00baF",
+        "value": 33
+    },
+    {
+        "attenuation": 72,
+        "description": "Top-fermenting strain that is traditionally good for to",
+        "flocculation": "Medium - Hig8% - 12%",
+        "name": "WLP038 White Labs Manchester A",
+        "temperature": "65\u00baF \u2013 70\u00baF",
+        "value": 34
+    },
+    {
+        "attenuation": 77.5,
+        "description": "British style ale yeast with a very dry finish. Medium",
+        "flocculation": "Medium - Hig5% - 10%",
+        "name": "WLP039 White Labs Nottingham A",
+        "temperature": "66\u00baF \u2013 70\u00baF",
+        "value": 35
+    },
+    {
+        "attenuation": 67.5,
+        "description": "A popular ale yeast from the Pacific Northwest. The yea",
+        "flocculation": "High        5% - 10%",
+        "name": "WLP041 White Labs Pacific Ale",
+        "temperature": "65\u00baF \u2013 68\u00baF",
+        "value": 36
+    },
+    {
+        "attenuation": 72.5,
+        "description": "From Northern California. This strain is more fruity th",
+        "flocculation": "Medium - Hig8% - 12%",
+        "name": "WLP051 White Labs California A",
+        "temperature": "66\u00baF \u2013 70\u00baF",
+        "value": 37
+    },
+    {
+        "attenuation": 76,
+        "description": "Our most popular yeast strain is WLP001, California Ale",
+        "flocculation": "Medium      8% - 12%",
+        "name": "WLP060 White Labs American Ale",
+        "temperature": "68\u00baF - 72\u00baF",
+        "value": 38
+    },
+    {
+        "attenuation": 71.5,
+        "description": "Clean strain that complements malt flavor.\u00a0Low to moder",
+        "flocculation": "Medium High 5% - 10%",
+        "name": "WLP072 White Labs French Ale",
+        "temperature": "63\u00baF \u2013 73\u00baF",
+        "value": 38.5
+    },
+    {
+        "attenuation": 77.5,
+        "description": "This is a blend of ale and lager yeast strains.\u00a0 The st",
+        "flocculation": "Medium      8% - 12%",
+        "name": "WLP080 White Labs Cream Ale Bl",
+        "temperature": "65\u00baF \u2013 70\u00baF",
+        "value": 39
+    },
+    {
+        "attenuation": 72.5,
+        "description": "A blend of British ale yeast strains, designed to add c                                        Austin Homebrew Su",
+        "flocculation": "Medium High 5% - 10%",
+        "name": "WLP085 White Labs English Ale",
+        "temperature": "68\u00baF \u2013 72\u00baF",
+        "value": 39.5
+    },
+    {
+        "attenuation": 79.5,
+        "description": "A super clean, super-fast fermenting strain. A low este",
+        "flocculation": "Medium - Hig10% - 15%",
+        "name": "WLP090 White Labs San Diego Su",
+        "temperature": "65\u00baF \u2013 68\u00baF",
+        "value": 40
+    },
+    {
+        "attenuation": 80,
+        "description": "Can ferment up to 25% alcohol. From England. Produces e",
+        "flocculation": "Medium      15%+",
+        "name": "WLP099 White Labs Super High G",
+        "temperature": "65\u00baF \u2013 69\u00baF",
+        "value": 41
+    },
+    {
+        "attenuation": 74,
+        "description": "This yeast is characterized by a clean, slight malty fi                                        Austin Homebrew Su",
+        "flocculation": "Medium      5% - 10%",
+        "name": "WLP295 White Labs Pacific Coas",
+        "temperature": "50\u00baF \u2013 55\u00baF",
+        "value": 41.25
+    },
+    {
+        "attenuation": 75,
+        "description": "Previously called \"Columbia Ale Yeast\" from the Pacific                                        Austin Homebrew Su",
+        "flocculation": "Medium High 8% - 12%",
+        "name": "WLP299 White Labs Persica Ale",
+        "temperature": "68\u00baF \u2013 78\u00baF",
+        "value": 41.5
+    },
+    {
+        "attenuation": 74,
+        "description": "This famous German yeast is a strain used in the produc",
+        "flocculation": "Low         5% - 10%",
+        "name": "WLP300 White Labs Hefeweizen A",
+        "temperature": "68\u00baF \u2013 72\u00baF",
+        "value": 42
+    },
+    {
+        "attenuation": 72.5,
+        "description": "This yeast is used to produce the Oregon style American",
+        "flocculation": "Low         5% - 10%",
+        "name": "WLP320 White Labs American Hef",
+        "temperature": "65\u00baF \u2013 69\u00baF",
+        "value": 43
+    },
+    {
+        "attenuation": 75,
+        "description": "Former Yeast Lab W51 yeast strain, acquired from Dan Mc                                        Previously W51",
+        "flocculation": "Low         5% - 10%",
+        "name": "WLP351 White Labs Bavarian Wei",
+        "temperature": "66\u00baF \u2013 70\u00baF",
+        "value": 44
+    },
+    {
+        "attenuation": 76.5,
+        "description": "Large clove and phenolic aroma and flavor, with minimal",
+        "flocculation": "Low         5% - 10%",
+        "name": "WLP380 White Labs Hefeweizen I",
+        "temperature": "66\u00baF \u2013 70\u00baF",
+        "value": 45
+    },
+    {
+        "attenuation": 76,
+        "description": "Slightly phenolic and tart, this is the original yeast",
+        "flocculation": "Low - Medium5% - 10%",
+        "name": "WLP400 White Labs Belgian Wit",
+        "temperature": "67\u00baF \u2013 74\u00baF",
+        "value": 46
+    },
+    {
+        "attenuation": 72.5,
+        "description": "Less phenolic than WLP400, and more spicy. Will leave a",
+        "flocculation": "Low - Medium5% - 10%",
+        "name": "WLP410 White Labs Belgian Wit",
+        "temperature": "67\u00baF \u2013 74\u00baF",
+        "value": 47
+    },
+    {
+        "attenuation": 77.5,
+        "description": "From one of the few remaining Trappist breweries remain",
+        "flocculation": "Medium - Low10% -15%",
+        "name": "WLP500 White Labs Trappist Ale",
+        "temperature": "65\u00baF \u2013 72\u00baF",
+        "value": 48
+    },
+    {
+        "attenuation": 77,
+        "description": "A high gravity, Trappist style ale yeast. Produces dry",
+        "flocculation": "Medium      10% -15%",
+        "name": "WLP510 White Labs Belgian Bast",
+        "temperature": "66\u00baF \u2013 72\u00baF",
+        "value": 49
+    },
+    {
+        "attenuation": 76.5,
+        "description": "Clean, almost lager like Belgian type ale yeast. Good f",
+        "flocculation": "Medium      5% - 10%",
+        "name": "WLP515 White Labs Antwerp Ale",
+        "temperature": "67\u00baF \u2013 70\u00baF",
+        "value": 50
+    },
+    {
+        "attenuation": 77.5,
+        "description": "Used to produce Trappist style beers. Similar to WLP500",
+        "flocculation": "Medium - Hig10% -15%",
+        "name": "WLP530 White Labs Abbey Ale",
+        "temperature": "66\u00baF \u2013 72\u00baF",
+        "value": 51
+    },
+    {
+        "attenuation": 78,
+        "description": "An authentic Trappist style yeast. Use for Belgian styl",
+        "flocculation": "Medium      10% -15%",
+        "name": "WLP540 White Labs Abbey IV Ale",
+        "temperature": "66\u00baF \u2013 72\u00baF",
+        "value": 52
+    },
+    {
+        "attenuation": 81.5,
+        "description": "From the Ardennes region of Belgium, this classic yeast",
+        "flocculation": "Medium      10% -15%",
+        "name": "WLP545 White Labs Belgian Stro",
+        "temperature": "66\u00baF \u2013 72\u00baF",
+        "value": 53
+    },
+    {
+        "attenuation": 81.5,
+        "description": "Saisons, Belgian Ales, Belgian Reds, Belgian Browns, an",
+        "flocculation": "Medium      8% - 12%",
+        "name": "WLP550 White Labs Belgian Ale",
+        "temperature": "68\u00baF \u2013 78\u00baF",
+        "value": 54
+    },
+    {
+        "attenuation": 72.5,
+        "description": "This Saison blend that marries both earthy, spicy notes                                        Austin Homebrew Su",
+        "flocculation": "Medium      5% - 10%",
+        "name": "WLP560 White Labs Classic Sais",
+        "temperature": "68\u00baF \u2013 78\u00baF",
+        "value": 54.5
+    },
+    {
+        "attenuation": 70,
+        "description": "Classic Saison yeast from Wallonia. It produces earthy,",
+        "flocculation": "Medium      5% - 10%",
+        "name": "WLP565 White Labs Belgian Sais",
+        "temperature": "68\u00baF \u2013 75\u00baF",
+        "value": 55
+    },
+    {
+        "attenuation": 81.5,
+        "description": "Saison strain with more fruity ester production than wi",
+        "flocculation": "Medium      5% - 10%",
+        "name": "WLP566 White Labs Belgian Sais",
+        "temperature": "68\u00baF \u2013 78\u00baF",
+        "value": 56
+    },
+    {
+        "attenuation": 75,
+        "description": "This blend melds Belgian style ale and Saison strains.",
+        "flocculation": "Medium      5% - 10%",
+        "name": "WLP568 White Labs Belgian Styl",
+        "temperature": "70\u00baF \u2013 80\u00baF",
+        "value": 57
+    },
+    {
+        "attenuation": 75.5,
+        "description": "From East Flanders, versatile yeast that can produce li",
+        "flocculation": "Low         10% - 15%",
+        "name": "WLP570 White Labs Belgian Gold",
+        "temperature": "68\u00baF \u2013 75\u00baF",
+        "value": 58
+    },
+    {
+        "attenuation": 77,
+        "description": "A blend of Trappist type yeast (2) and one Belgian ale",
+        "flocculation": "Medium      8% - 12%",
+        "name": "WLP575 White Labs Belgian Stya",
+        "temperature": "68\u00baF \u2013 75\u00baF",
+        "value": 59
+    },
+    {
+        "attenuation": 72,
+        "description": "Produces beer with a high fruit ester characteristic, a",
+        "flocculation": "Low - Medium5% - 10%",
+        "name": "WLP585 White Labs Belgian Sais",
+        "temperature": "68\u00baF \u2013 75\u00baF",
+        "value": 59.5
+    },
+    {
+        "attenuation": 76.5,
+        "description": "A blend of a traditional German Weizen yeast and Lactob",
+        "flocculation": "Medium      5% - 10%",
+        "name": "WLP630 White Labs Berliner Wei",
+        "temperature": "68\u00baF \u2013 72\u00baF",
+        "value": 60
+    },
+    {
+        "attenuation": 85,
+        "description": "This Belgian strain, used traditionally for 100% Bretta",
+        "flocculation": "Low         8% - 12%",
+        "name": "WLP644 White Labs Brettanomyce",
+        "temperature": "70\u00baF \u2013 85\u00baF",
+        "value": 60.5
+    },
+    {
+        "attenuation": 85,
+        "description": "Low intensity Brett character. Originally isolated from",
+        "flocculation": "Low         8% - 12%",
+        "name": "WLP645 White Labs Brettanomyce",
+        "temperature": "70\u00baF \u2013 85\u00baF",
+        "value": 61
+    },
+    {
+        "attenuation": 85,
+        "description": "Medium intensity Brett character. Classic strain used i",
+        "flocculation": "Low         8% - 12%",
+        "name": "WLP650 White Labs Brettanomyce",
+        "temperature": "70\u00baF \u2013 85\u00baF",
+        "value": 62
+    },
+    {
+        "attenuation": 85,
+        "description": "High intensity Brett character. Defines the \"Brett char",
+        "flocculation": "Low         8% - 12%",
+        "name": "WLP653 White Labs Brettanomyce",
+        "temperature": "70\u00baF \u2013 85\u00baF",
+        "value": 63
+    },
+    {
+        "attenuation": 85,
+        "description": "A unique blend perfect for Belgian style beers. Include",
+        "flocculation": "Low         8% - 12%",
+        "name": "WLP655 White Labs Belgian Sour",
+        "temperature": "70\u00baF \u2013 85\u00baF",
+        "value": 64
+    },
+    {
+        "attenuation": 82.5,
+        "description": "Blended culture used to produce the classic beer styles",
+        "flocculation": "Low - Medium8% - 12%",
+        "name": "WLP665 White Labs Flemish Ale",
+        "temperature": "68\u00baF \u2013 80\u00baF",
+        "value": 64.5
+    },
+    {
+        "attenuation": 78.5,
+        "description": "Inspired by local American brewers crafting semi- tradi",
+        "flocculation": "Medium      5% - 10%",
+        "name": "WLP670 White Labs American Far",
+        "temperature": "68\u00baF \u2013 72\u00baF",
+        "value": 65
+    },
+    {
+        "attenuation": 80,
+        "description": "\"Lactobacillus brevis is a rod-shaped bacteria used for",
+        "flocculation": "N/A",
+        "name": "WLP672 Lactobacillus Brevis",
+        "temperature": "70\u00baF \u2013 95\u00baF",
+        "value": 65.5
+    },
+    {
+        "attenuation": null,
+        "description": "Malolactic fermentation is the conversion of malic acid",
+        "flocculation": "",
+        "name": "WLP675 White Labs Malolactic B",
+        "temperature": "",
+        "value": 66
+    },
+    {
+        "attenuation": null,
+        "description": "This lactic acid bacteria produces moderate levels of a",
+        "flocculation": "",
+        "name": "WLP677 White Labs Lactobacillu",
+        "temperature": "",
+        "value": 67
+    },
+    {
+        "attenuation": 74.5,
+        "description": "Classic pilsner strain from the premier pilsner produce",
+        "flocculation": "Medium - Hig5% - 10%",
+        "name": "WLP800 White Labs Pilsner Lage",
+        "temperature": "50\u00baF \u2013 55\u00baF",
+        "value": 68
+    },
+    {
+        "attenuation": 77.5,
+        "description": "Pilsner lager yeast from Southern Czech Republic. Produ",
+        "flocculation": "Medium      5% - 10%",
+        "name": "WLP802 White Labs Czech Budejo",
+        "temperature": "50\u00baF \u2013 55\u00baF",
+        "value": 69
+    },
+    {
+        "attenuation": 67.5,
+        "description": "This yeast is used to produce the \"California Common\" s",
+        "flocculation": "High        8% - 12%",
+        "name": "WLP810 White Labs San Francisc",
+        "temperature": "58\u00baF \u2013 65\u00baF",
+        "value": 70
+    },
+    {
+        "attenuation": 75,
+        "description": "Clean, crisp European lager yeast with low sulfur \u00a0prod",
+        "flocculation": "Medium      5% - 10%",
+        "name": "WLP815 White Labs Belgian Lage",
+        "temperature": "50\u00baF \u2013 55\u00baF",
+        "value": 71
+    },
+    {
+        "attenuation": 69,
+        "description": "This yeast produces a very malty, bock like style. It d",
+        "flocculation": "Medium      8% - 12%",
+        "name": "WLP820 White Labs Oktoberfest",
+        "temperature": "52\u00baF \u2013 58\u00baF",
+        "value": 72
+    },
+    {
+        "attenuation": 76.5,
+        "description": "This yeast is one of the most widely used lager yeasts",
+        "flocculation": "Medium      5% - 10%",
+        "name": "WLP830 White Labs German Lager",
+        "temperature": "50\u00baF \u2013 55\u00baF",
+        "value": 73
+    },
+    {
+        "attenuation": 73,
+        "description": "From the Alps of southern Bavaria, this yeast produces",
+        "flocculation": "Medium      8% - 12%",
+        "name": "WLP833 White Labs German Bock",
+        "temperature": "48\u00baF \u2013 55\u00baF",
+        "value": 74
+    },
+    {
+        "attenuation": 72,
+        "description": "This yeast is characterized by a malty finish and balan",
+        "flocculation": "Medium - Hig5% - 10%",
+        "name": "WLP838 White Labs Southern Ger",
+        "temperature": "50\u00baF \u2013 55\u00baF",
+        "value": 75
+    },
+    {
+        "attenuation": 77.5,
+        "description": "This yeast is used to produce American style lagers. Dr",
+        "flocculation": "Medium      5% - 10%",
+        "name": "WLP840 White Labs American Lag",
+        "temperature": "50\u00baF \u2013 55\u00baF",
+        "value": 76
+    },
+    {
+        "attenuation": 70,
+        "description": "This yeast helps to produce a malty, but balanced tradi",
+        "flocculation": "Medium      5% - 10%",
+        "name": "WLP860 White Labs Munich Helle",
+        "temperature": "48\u00baF \u2013 52\u00baF",
+        "value": 76.5
+    },
+    {
+        "attenuation": 68,
+        "description": "This signature strain, from Charlie Papazian, has the a",
+        "flocculation": "Medium - Low",
+        "name": "WLP862 White Labs Cry Havoc",
+        "temperature": "68\u00baF \u2013 74\u00baF",
+        "value": 77
+    },
+    {
+        "attenuation": 75,
+        "description": "Swiss style lager yeast. With proper care, this yeast c",
+        "flocculation": "Medium      15%+",
+        "name": "WLP885 White Labs Zurich Lager",
+        "temperature": "50\u00baF \u2013 55\u00baF",
+        "value": 78
+    },
+    {
+        "attenuation": 69.5,
+        "description": "From Southern Germany, this yeast finishes malty with a",
+        "flocculation": "Medium      8% - 12%",
+        "name": "WLP920 White Labs Old Bavarian",
+        "temperature": "50\u00baF \u2013 55\u00baF",
+        "value": 79
+    },
+    {
+        "attenuation": 74,
+        "description": "From Mexico City, this yeast produces clean lager beer,",
+        "flocculation": "Medium      5% - 10%",
+        "name": "WLP940 White Labs Mexican Lage",
+        "temperature": "50\u00baF \u2013 55\u00baF",
+        "value": 80
+    },
+    {
+        "attenuation": 75,
+        "description": "A clean, aggressive ale strain well suited for American                                        Midwest Supplies E",
+        "flocculation": "Medium      10%",
+        "name": "WY1000 Wyeast Headwaters Ale",
+        "temperature": "60\u00baF \u2013 75\u00baF",
+        "value": 81
+    },
+    {
+        "attenuation": 75,
+        "description": "A true top cropping yeast with low ester formation and    American Wheat or Rye Beer",
+        "flocculation": "Low         11%",
+        "name": "WY1007 Wyeast German Ale",
+        "temperature": "55\u00baF \u2013 68\u00baF",
+        "value": 82
+    },
+    {
+        "attenuation": 76,
+        "description": "A strong fermenting, true top cropping yeast that produ   American Wheat or Rye Beer",
+        "flocculation": "Low         10%",
+        "name": "WY1010 Wyeast American Wheat",
+        "temperature": "58\u00baF \u2013 74\u00baF",
+        "value": 83
+    },
+    {
+        "attenuation": 75.5,
+        "description": "A great yeast choice for any cask conditioned British A   Blonde Ale",
+        "flocculation": "Medium \u2013 Hig9%",
+        "name": "WY1026PC Wyeast British Cask A",
+        "temperature": "63\u00baF \u2013 72\u00baF",
+        "value": 84
+    },
+    {
+        "attenuation": 75,
+        "description": "A rich, minerally profile that is bold and crisp with s   Brown Porter",
+        "flocculation": "Medium \u2013 Low11%",
+        "name": "WY1028 Wyeast London Ale",
+        "temperature": "60\u00baF \u2013 72\u00baF",
+        "value": 85
+    },
+    {
+        "attenuation": 75,
+        "description": "Very clean, crisp flavor characteristics with low fruit   American Amber Ale",
+        "flocculation": "Medium \u2013 Low11%",
+        "name": "WY1056 American Ale",
+        "temperature": "60\u00baF \u2013 72\u00baF",
+        "value": 86
+    },
+    {
+        "attenuation": 73,
+        "description": "This versatile yeast ferments extremely well in dark wo   American Barleywine",
+        "flocculation": "Medium      12%",
+        "name": "WY1084 Wyeast Irish Ale",
+        "temperature": "60\u00baF \u2013 72\u00baF",
+        "value": 87
+    },
+    {
+        "attenuation": 74,
+        "description": "This yeast allows malt and hop character to dominate th   Blonde Ale",
+        "flocculation": "Medium      10%",
+        "name": "WY1098 Wyeast British Ale",
+        "temperature": "64\u00baF \u2013 72\u00baF",
+        "value": 88
+    },
+    {
+        "attenuation": 70,
+        "description": "A mildly malty and slightly fruity fermentation profile   Blonde Ale",
+        "flocculation": "Medium \u2013 Hig10%",
+        "name": "WY1099 Wteast Whitbread Ale",
+        "temperature": "64\u00baF \u2013 75\u00baF",
+        "value": 89
+    },
+    {
+        "attenuation": 70,
+        "description": "A top cropping yeast strain with unique fermentation an   American IPA",
+        "flocculation": "High        10%",
+        "name": "WY1187 Wyeast Ringwood Ale",
+        "temperature": "64\u00baF \u2013 74\u00baF",
+        "value": 90
+    },
+    {
+        "attenuation": 76,
+        "description": "A widely used and alcohol tolerant Abbey yeast that is    Belgian Dark Strong Ale",
+        "flocculation": "Medium \u2013 Low12%",
+        "name": "WY1214 Wyeast Belgian Abbey",
+        "temperature": "68\u00baF \u2013 78\u00baF",
+        "value": 91
+    },
+    {
+        "attenuation": 74,
+        "description": "With many of the best qualities that brewers look for w   American Amber Ale",
+        "flocculation": "Medium \u2013 Hig10%",
+        "name": "WY1272 Wyeast American Ale II",
+        "temperature": "60\u00baF \u2013 72\u00baF",
+        "value": 92
+    },
+    {
+        "attenuation": 77,
+        "description": "This strain produces classic British bitters with a ric   Brown Porter",
+        "flocculation": "Medium \u2013 Low10%",
+        "name": "WY1275 Wyeast Thames Valley Al",
+        "temperature": "62\u00baF \u2013 72\u00baF",
+        "value": 93
+    },
+    {
+        "attenuation": 73,
+        "description": "Originating from a traditional London brewery, this yea   American Amber Ale",
+        "flocculation": "High        10%",
+        "name": "WY1318 Wyeast London Ale III",
+        "temperature": "64\u00baF \u2013 74\u00baF",
+        "value": 94
+    },
+    {
+        "attenuation": 69,
+        "description": "One of the classic ale strains from a Northwest U.S. Br   American Amber Ale",
+        "flocculation": "High        10%",
+        "name": "WY1332 Wyeast Northwest Ale",
+        "temperature": "65\u00baF \u2013 75\u00baF",
+        "value": 95
+    },
+    {
+        "attenuation": 74.5,
+        "description": "A classic British ale profile with good flocculation an   American Brown Ale",
+        "flocculation": "High        10%",
+        "name": "WY1335 Wyeast British Ale II",
+        "temperature": "63\u00baF \u2013 75\u00baF",
+        "value": 96
+    },
+    {
+        "attenuation": 69,
+        "description": "A full-bodied strain, finishing very malty with a compl   Baltic Porter",
+        "flocculation": "High        10%",
+        "name": "WY1338 Wyeast European Ale",
+        "temperature": "62\u00baF \u2013 72\u00baF",
+        "value": 96.5
+    },
+    {
+        "attenuation": 76,
+        "description": "The classic choice for brewing golden strong ales. This   Belgian Blond Ale",
+        "flocculation": "Low         12% - 13%",
+        "name": "WY1388 Wyeast Belgian Strong",
+        "temperature": "64\u00baF \u2013 80\u00baF",
+        "value": 97
+    },
+    {
+        "attenuation": 75,
+        "description": "This terrific all-round yeast can be used for almost an   American Amber Ale",
+        "flocculation": "Low         10%",
+        "name": "WY1450 Wyeast Denny's Favorite",
+        "temperature": "60\u00baF \u2013 70\u00baF",
+        "value": 98
+    },
+    {
+        "attenuation": 69,
+        "description": "This strain produces ales with a full chewy malt flavor   English IPA",
+        "flocculation": "High        9%",
+        "name": "WY1469 Wyeast West Yorkshire A",
+        "temperature": "64\u00baF \u2013 72\u00baF",
+        "value": 99
+    },
+    {
+        "attenuation": 77.5,
+        "description": "A very versatile ale strain from Belgium. Excellent for   Belgian Pale Ale",
+        "flocculation": "Medium      12%",
+        "name": "WY1581PC Wyeast Belgian Stout",
+        "temperature": "65\u00baF \u2013 75\u00baF",
+        "value": 100
+    },
+    {
+        "attenuation": 71,
+        "description": "Our Scottish ale strain is ideally suited for the stron   American Barleywine",
+        "flocculation": "High        12%",
+        "name": "WY1728 Scottish Ale",
+        "temperature": "55\u00baF \u2013 75\u00baF",
+        "value": 101
+    },
+    {
+        "attenuation": 75,
+        "description": "An excellent yeast strain for use in Belgian dark stron   American Barleywine",
+        "flocculation": "Medium      12%",
+        "name": "WY1762 Wyeast Belgian Abbey II",
+        "temperature": "65\u00baF \u2013 75\u00baF",
+        "value": 102
+    },
+    {
+        "attenuation": 75,
+        "description": "A versatile yeast strain from one of Oregon\u2019s leading c   American Pale Ale",
+        "flocculation": "Medium \u2013 Hig12%",
+        "name": "WY1764PC Wyeast Rogue Pacman",
+        "temperature": "60\u00baF \u2013 72\u00baF",
+        "value": 103
+    },
+    {
+        "attenuation": 70,
+        "description": "A great yeast for malt predominate ales. Produces light   Blonde Ale",
+        "flocculation": "High        9%",
+        "name": "WY1768PC Wyeast English Specia",
+        "temperature": "64\u00baF \u2013 72\u00baF",
+        "value": 104
+    },
+    {
+        "attenuation": 75,
+        "description": "This strain was originally sourced from a now defunct b   Ordinary and Special Bitters",
+        "flocculation": "High        10%",
+        "name": "WY1882PC Wyeast Thames Valley",
+        "temperature": "60\u00baF \u2013 70\u00baF",
+        "value": 105
+    },
+    {
+        "attenuation": 74.5,
+        "description": "This traditional English ale strain works well for a wi                                        Northern Brewer Ex",
+        "flocculation": "Medium \u2013 Hig",
+        "name": "WY1945 Wyeast NeoBritannia",
+        "temperature": "66\u00baF \u2013 74\u00baF",
+        "value": 106
+    },
+    {
+        "attenuation": 69,
+        "description": "A very good cask conditioned ale strain, this extremely   English Barleywine",
+        "flocculation": "Very High   9%",
+        "name": "WY1968 London ESB Ale",
+        "temperature": "64\u00baF \u2013 72\u00baF",
+        "value": 107
+    },
+    {
+        "attenuation": 73,
+        "description": "The Budvar strain has a nice malty nose with subtle fru   Bohemian Pilsner",
+        "flocculation": "Medium \u2013 Hig9%",
+        "name": "WY2000 Wyeast Budvar Lager",
+        "temperature": "48\u00baF \u2013 56\u00baF",
+        "value": 108
+    },
+    {
+        "attenuation": 74,
+        "description": "With a mild fruit and floral aroma this strain has a ve   Bohemian Pilsner                     Pilsner Urquell la",
+        "flocculation": "Medium \u2013 Hig9%",
+        "name": "WY2001 Wyeast Urquell Lager",
+        "temperature": "48\u00baF \u2013 56\u00baF",
+        "value": 109
+    },
+    {
+        "attenuation": 73,
+        "description": "Wyeast 2007 is the classic American lager strain. This    Classic American Pilsner",
+        "flocculation": "Medium      9%",
+        "name": "WY2007 Wyeast Pilsen Lager",
+        "temperature": "48\u00baF \u2013 56\u00baF",
+        "value": 110
+    },
+    {
+        "attenuation": 75,
+        "description": "A complex and aromatic strain that can be used for a va   Classic American Pilsner",
+        "flocculation": "Medium      9%",
+        "name": "WY2035 Wyeast American Lager",
+        "temperature": "48\u00baF \u2013 58\u00baF",
+        "value": 111
+    },
+    {
+        "attenuation": 75,
+        "description": "This yeast is a good choice for Dortmund-style lagers.    Classic American Pilsner",
+        "flocculation": "Low         9%",
+        "name": "WY2042 Wyeast Danish Lager",
+        "temperature": "46\u00baF \u2013 56\u00baF",
+        "value": 112
+    },
+    {
+        "attenuation": 72,
+        "description": "Perfect for that \u201cBanquet Style\u201d beer, this lager strai                                        Coors",
+        "flocculation": "Medium \u2013 Hig9%",
+        "name": "WY2105PC Wyeast Rocky Mountain",
+        "temperature": "48\u00baF \u2013 56\u00baF",
+        "value": 113
+    },
+    {
+        "attenuation": 69,
+        "description": "This strain is particularly well suited for producing 1   Baltic Porter",
+        "flocculation": "High        9%",
+        "name": "WY2112 Wyeast California Lager",
+        "temperature": "58\u00baF \u2013 68\u00baF",
+        "value": 114
+    },
+    {
+        "attenuation": 75,
+        "description": "This Carlsberg type yeast is the most widely used lager   Baltic Porter",
+        "flocculation": "Medium \u2013 Low9%",
+        "name": "WY2124 Wyeast Bohemian Lager",
+        "temperature": "45\u00baF \u2013 68\u00baF",
+        "value": 115
+    },
+    {
+        "attenuation": 75,
+        "description": "Used by many German breweries to produce rich, full-bod   Classic Rauchbier",
+        "flocculation": "Medium \u2013 Hig9%",
+        "name": "WY2206 Wyeast Bavarian Lager",
+        "temperature": "46\u00baF \u2013 58\u00baF",
+        "value": 116
+    },
+    {
+        "attenuation": 75,
+        "description": "This strain exhibits a very clean and dry flavor profil   German Pilsner",
+        "flocculation": "Low         10%",
+        "name": "WY2247PC Wyeast European Lager",
+        "temperature": "46\u00baF \u2013 56\u00baF",
+        "value": 117
+    },
+    {
+        "attenuation": 75,
+        "description": "This versatile lager strain is an excellent choice for    Light American Lager",
+        "flocculation": "Low         9%",
+        "name": "WY2252PC Wyeast Rasenmaher Lag",
+        "temperature": "48\u00baF \u2013 68\u00baF",
+        "value": 118
+    },
+    {
+        "attenuation": 73,
+        "description": "Traditional culture of North American and Canadian lage   Classic American Pilsner",
+        "flocculation": "High        9%",
+        "name": "WY2272PC Wyeast North American",
+        "temperature": "52\u00baF \u2013 58\u00baF",
+        "value": 119
+    },
+    {
+        "attenuation": 72,
+        "description": "Originating from the home of great Pilsners in the Czec   Bohemian Pilsner                     Pilsner Urquell-D",
+        "flocculation": "Medium \u2013 Hig9%",
+        "name": "WY2278 Wyeast Czech Pils",
+        "temperature": "50\u00baF \u2013 58\u00baF",
+        "value": 120
+    },
+    {
+        "attenuation": 72,
+        "description": "This is a unique strain, capable of producing fine lage   Classic Rauchbier",
+        "flocculation": "Medium      9%",
+        "name": "WY2308 Wyeast Munich Lager",
+        "temperature": "48\u00baF \u2013 56\u00baF",
+        "value": 121
+    },
+    {
+        "attenuation": 73,
+        "description": "From a famous brewery in Munich, this strain is a low d   Lager",
+        "flocculation": "Medium      10%",
+        "name": "WY2352PC Wyeast Munich Lager I",
+        "temperature": "52\u00baF \u2013 62\u00baF",
+        "value": 122
+    },
+    {
+        "attenuation": 72,
+        "description": "Direct from the Austrian Alps, this strain will produce   Lager",
+        "flocculation": "Medium      12%",
+        "name": "WY2487PC Wyeast Hella Bock",
+        "temperature": "48\u00baF \u2013 56\u00baF",
+        "value": 123
+    },
+    {
+        "attenuation": 75,
+        "description": "This strain is a classic, true top cropping yeast strai   American Wheat or Rye Beer",
+        "flocculation": "Low         10%",
+        "name": "WY2565 Wyeast K\u00f6lsch",
+        "temperature": "56\u00baF \u2013 70\u00baF",
+        "value": 124
+    },
+    {
+        "attenuation": 75,
+        "description": "This authentic Kolsch strain from one of Germany\u2019s lead   K\u00f6lsch",
+        "flocculation": "Low         10%",
+        "name": "WY2575PC Wyeast Kolsch II",
+        "temperature": "55\u00baF \u2013 70\u00baF",
+        "value": 125
+    },
+    {
+        "attenuation": 75,
+        "description": "This blend of lager strains is designed to produce a ri   Baltic Porter",
+        "flocculation": "Medium \u2013 Low9%",
+        "name": "WY2633 Wyeast Octoberfest Lage",
+        "temperature": "48\u00baF \u2013 58\u00baF",
+        "value": 126
+    },
+    {
+        "attenuation": 72,
+        "description": "This yeast will help create medium to full body lagers    Bohemian Pilsner",
+        "flocculation": "High        11%",
+        "name": "WY2782PC Wyeast Staro Prague L",
+        "temperature": "50\u00baF \u2013 58\u00baF",
+        "value": 127
+    },
+    {
+        "attenuation": 75,
+        "description": "This proprietary blend of a top-fermenting neutral ale    Dunkelweizen",
+        "flocculation": "Medium      10%",
+        "name": "WY3056 Wyeast Bavarian Wheat",
+        "temperature": "64\u00baF \u2013 74\u00baF",
+        "value": 128
+    },
+    {
+        "attenuation": 75,
+        "description": "The classic and most popular German wheat beer strain u   Dunkelweizen",
+        "flocculation": "Low         10%",
+        "name": "WY3068 Wyeast Weihenstephan We",
+        "temperature": "64\u00baF \u2013 75\u00baF",
+        "value": 129
+    },
+    {
+        "attenuation": 75,
+        "description": "This blend includes a German ale strain with low ester    Lambics",
+        "flocculation": "Low         6%",
+        "name": "WY3191PC Wyeast Berliner-Weiss",
+        "temperature": "68\u00baF \u2013 72\u00baF",
+        "value": 130
+    },
+    {
+        "attenuation": 75,
+        "description": "This blend contains yeast and bacteria cultures importa   Flanders Red Ale",
+        "flocculation": "Variable    11%",
+        "name": "WY3278 Wyeast Belgian Lambic B",
+        "temperature": "63\u00baF \u2013 75\u00baF",
+        "value": 131
+    },
+    {
+        "attenuation": 73,
+        "description": "A highly flocculent German wheat beer strain that is th   Dunkelweizen",
+        "flocculation": "High        10%",
+        "name": "WY3333 Wyeast German Wheat",
+        "temperature": "63\u00baF \u2013 75\u00baF",
+        "value": 132
+    },
+    {
+        "attenuation": 74,
+        "description": "A widely used strain in the production of Witbier and G   Belgian Specialty Ale",
+        "flocculation": "Low         12%",
+        "name": "WY3463 Wyeast Forbidden Fruit",
+        "temperature": "63\u00baF \u2013 76\u00baF",
+        "value": 133
+    },
+    {
+        "attenuation": 74,
+        "description": "One of the great and versatile strains for the producti   Belgian Blond Ale",
+        "flocculation": "High        12%",
+        "name": "WY3522 Wyeast Belgian Ardennes",
+        "temperature": "65\u00baF \u2013 76\u00baF",
+        "value": 134
+    },
+    {
+        "attenuation": 76.5,
+        "description": "This vigorous top fermenting Belgian style strain produ   Belgian Pale Ale",
+        "flocculation": "High        12%",
+        "name": "WY3538PC Wyeast Leuven Pale Al",
+        "temperature": "65\u00baF \u2013 80\u00baF",
+        "value": 135
+    },
+    {
+        "attenuation": 73,
+        "description": "A complex alternative to the standard German wheat stra   Dunkelweizen",
+        "flocculation": "Low         10%",
+        "name": "WY3638 Wyeast Bavarian Wheat",
+        "temperature": "64\u00baF \u2013 75\u00baF",
+        "value": 136
+    },
+    {
+        "attenuation": 75,
+        "description": "From the East Flanders - Antwerpen region of Belgium, t",
+        "flocculation": "Medium",
+        "name": "WY3655PC Wyeast Belgian Scheld",
+        "temperature": "62\u00baF \u2013 74\u00baF",
+        "value": 137
+    },
+    {
+        "attenuation": 80,
+        "description": "A very versatile strain that produces Saison or farmhou   Belgian Blond Ale",
+        "flocculation": "Low         12%",
+        "name": "WY3711 Wyeast French Saison",
+        "temperature": "65\u00baF \u2013 77\u00baF",
+        "value": 138
+    },
+    {
+        "attenuation": 78,
+        "description": "This strain is the classic farmhouse ale yeast. A tradi   Saison                               Saison du Pont",
+        "flocculation": "Low         12%",
+        "name": "WY3724 Wyeast Belgian Saison",
+        "temperature": "70\u00baF \u2013 95\u00baF",
+        "value": 139
+    },
+    {
+        "attenuation": 76.5,
+        "description": "Low to moderate ester production with subtle spiciness.   Saison",
+        "flocculation": "Low         12%",
+        "name": "WY3725PC Wyeast Bier de Garde",
+        "temperature": "74\u00baF \u2013 84\u00baF",
+        "value": 140
+    },
+    {
+        "attenuation": 76.5,
+        "description": "This strain produces complex esters balanced with earth",
+        "flocculation": "Variable    12%",
+        "name": "WY3726PC Wyeast Farmhouse Ale",
+        "temperature": "70\u00baF \u2013 95\u00baF",
+        "value": 141
+    },
+    {
+        "attenuation": 76,
+        "description": "This well balanced strain from northern Belgium will pr   Belgian Pale Ale",
+        "flocculation": "Medium \u2013 Low12%",
+        "name": "WY3739PC Wyeast Flanders Golde",
+        "temperature": "64\u00baF \u2013 80\u00baF",
+        "value": 142
+    },
+    {
+        "attenuation": 80,
+        "description": "Our blend of lambic cultures produce beer with a comple   Flanders Brown Ale/Oud Bruin",
+        "flocculation": "Variable    11%",
+        "name": "WY3763 Wyeast Roeselare Ale Bl",
+        "temperature": "65\u00baF \u2013 85\u00baF",
+        "value": 143
+    },
+    {
+        "attenuation": 76,
+        "description": "A classic strain selection for brewing Belgian dubbel o   Belgian Dubbel",
+        "flocculation": "Medium      11% - 12%",
+        "name": "WY3787 Wyeast Trappist High Gr",
+        "temperature": "64\u00baF \u2013 78\u00baF",
+        "value": 144
+    },
+    {
+        "attenuation": 77.5,
+        "description": "A unique blend of Belgian Saccharomyces and  Brettanomy   Belgian Specialty Ale",
+        "flocculation": "Medium      12%",
+        "name": "WY3789PC Wyeast Trappist Blend",
+        "temperature": "68\u00baF \u2013 85\u00baF",
+        "value": 145
+    },
+    {
+        "attenuation": 76.5,
+        "description": "This Unique Belgian ale yeast produces spicy, phenolic",
+        "flocculation": "Medium \u2013 Hig12%",
+        "name": "WY3822PC Wyeast Ingelmunster A",
+        "temperature": "65\u00baF \u2013 80\u00baF",
+        "value": 146
+    },
+    {
+        "attenuation": 77,
+        "description": "This alcohol tolerant strain produces complex and well-   Belgian Dubbel and Tripel",
+        "flocculation": "Medium      12%",
+        "name": "WY3864PC Wyeast Canadian / Beg",
+        "temperature": "65\u00baF \u2013 80\u00baF",
+        "value": 147
+    },
+    {
+        "attenuation": 74,
+        "description": "Isolated from a small Belgian brewery, this strain prod   Belgian Pale Ale",
+        "flocculation": "Medium      12%",
+        "name": "WY3942 Wyeast Belgian Wheat",
+        "temperature": "64\u00baF \u2013 74\u00baF",
+        "value": 148
+    },
+    {
+        "attenuation": 74,
+        "description": "This versatile witbier yeast strain can be used in a va   Belgian Dubbel",
+        "flocculation": "Medium      11% - 12%",
+        "name": "WY3944 Wyeast Belgian Witbier",
+        "temperature": "62\u00baF \u2013 75\u00baF",
+        "value": 149
+    },
+    {
+        "attenuation": 80,
+        "description": "This strain of wild yeast was isolated from brewery cul   Flanders Red Ale",
+        "flocculation": "Medium      12%",
+        "name": "WY5112 Wyeast Brettanomyces Br",
+        "temperature": "60\u00baF \u2013 75\u00baF",
+        "value": 150
+    },
+    {
+        "attenuation": 80,
+        "description": "Isolated from English stock ale, this wild yeast produc   Lambics",
+        "flocculation": "Low         12%",
+        "name": "WY5151PC Wyeast Brettanomyces",
+        "temperature": "60\u00baF \u2013 75\u00baF",
+        "value": 151
+    },
+    {
+        "attenuation": null,
+        "description": "Lactic acid bacteria isolated from a Belgian brewery. T   Berliner Weisse",
+        "flocculation": "9%",
+        "name": "WY5335 Wyeast Lactobacillus De",
+        "temperature": "60\u00baF \u2013 95\u00baF",
+        "value": 152
+    },
+    {
+        "attenuation": null,
+        "description": "This is a wild yeast strain isolated from Belgian lambi   Berliner Weisse",
+        "flocculation": "Medium      12%",
+        "name": "WY5526 Wyeast Brettanomyces La",
+        "temperature": "60\u00baF \u2013 75\u00baF",
+        "value": 153
+    },
+    {
+        "attenuation": 76,
+        "description": "Greenbelt is an American ale strain that complements ho                                        Austin Homebrew Su",
+        "flocculation": "High        10%",
+        "name": "WY5609 Wyeast Greenbelt",
+        "temperature": "65\u00baF \u2013 72\u00baF",
+        "value": 154
+    },
+    {
+        "attenuation": null,
+        "description": "Lactic acid bacteria used in the production of Belgian    Fruit Lambic",
+        "flocculation": "9%",
+        "name": "WY5733 Wyeast Pediococcus Cere",
+        "temperature": "60\u00baF \u2013 95\u00baF",
+        "value": 155
+    },
+    {
+        "attenuation": 77.5,
+        "description": "This unique blend of strains is designed to ferment hig   American Barleywine",
+        "flocculation": "Low \u2013 Medium12% - 14%",
+        "name": "WY9093PC Wyeast Imperial Blend",
+        "temperature": "68\u00baF \u2013 75\u00baF",
+        "value": 156
+    },
+    {
+        "attenuation": 77.5,
+        "description": "To bring you a bit of English brewing heritage we devel   Strong Ale",
+        "flocculation": "Medium      12% - 14%",
+        "name": "WY9097PC Wyeast Old Ale Blend",
+        "temperature": "68\u00baF \u2013 75\u00baF",
+        "value": 157
+    }
+]
