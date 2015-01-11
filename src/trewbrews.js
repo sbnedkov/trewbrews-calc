@@ -44,8 +44,8 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
     };
 
     // Watch for gravity change
-    $scope.$watch('[fermentablesarr, yeast, boilsize, size, efficiency]', function (vals) {
-        var yeast, boilSize, batchSize, efficiency;
+    $scope.$watch('[fermentablesarr, yeast, boilsize, size, efficiency, equipment]', function (vals) {
+        var yeast, boilSize, batchSize, efficiency, equipment;
         var grav;
 
 
@@ -54,8 +54,9 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
         boilSize = $scope.boilsize && JSON.parse($scope.boilsize);
         batchSize = $scope.size && JSON.parse($scope.size);
         efficiency = $scope.efficiency && JSON.parse($scope.efficiency);
+        equipment = $scope.equipment && JSON.parse($scope.equipment);
 
-        grav = gravity.calculateGravity(getFermentables(), getSizes(), yeast, boilSize, batchSize, efficiency);
+        grav = gravity.calculateGravity(getFermentables(), getSizes(), yeast, boilSize, batchSize, efficiency, equipment);
 
         $scope.og = utils.round(grav.og);
         $scope.fg = utils.round(grav.fg);
@@ -63,15 +64,16 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
     }, true);
 
     // Watch for IBU change
-    $scope.$watch('[fermentablesarr, hopsarr, boilsize, size, time]', function (vals) {
-        var boilSize, batchSize, time;
+    $scope.$watch('[fermentablesarr, hopsarr, boilsize, size, time, equipment]', function (vals) {
+        var boilSize, batchSize, time, equipment;
         var tmp;
 
         boilSize = $scope.boilsize && JSON.parse($scope.boilsize);
         batchSize = $scope.size && JSON.parse($scope.size);
         time = $scope.time && JSON.parse($scope.time);
+        equipment = $scope.equipment && JSON.parse($scope.equipment);
 
-        tmp = ibu.calculateIbu(getHops(), getHopsSizes(), getFermentables(), getSizes(), boilSize, batchSize, time, $scope.og);
+        tmp = ibu.calculateIbu(getHops(), getHopsSizes(), getFermentables(), getSizes(), boilSize, batchSize, time, $scope.og, equipment);
         $scope.ibu = utils.round(tmp);
     }, true);
 

@@ -4,14 +4,14 @@ trewbrews.service('ibu', ['utils', function (utils) {
     var ibu = {
     };
 
-    ibu.calculateIbu = function (hops, sizes, fermentables, fsizes, boilSize, batchSize, boilTime, og) {
+    ibu.calculateIbu = function (hops, sizes, fermentables, fsizes, boilSize, batchSize, boilTime, og, equipment) {
         var ibus = 0;
         fermentables = _.filter(fermentables, function (fermentable) {
             return fermentable;
         });
 
         _.each(hops, function (hop, idx) {
-            ibus += ibuFromHop(hop, sizes[idx], batchSize, boilTime, og);
+            ibus += ibuFromHop(hop, sizes[idx], batchSize, boilTime, og, equipment);
         });
 
         _.each(fermentables, function (fermentable, idx) {
@@ -21,14 +21,18 @@ trewbrews.service('ibu', ['utils', function (utils) {
         return ibus;
     };
 
-    function ibuFromHop (hop, size, batchSize, boilTime, og) {
+    function ibuFromHop (hop, size, batchSize, boilTime, og, equipment) {
         var AArating = hop.alpha / 100;
         var grams = size * 1000;
         var minutes = hop.time;
         var utilization = 1;
+        var boilTime = 0;
         var ibus = 0;
 
-        // TODO: take equipment into account
+        if (equipment) {
+            utilization = equipment.hop_utilization / 100;
+            boilTime = equipment.boil_time;
+        }
          
         // TODO: there are two more cases for the hop use, but one is not present in the database, the other depends on equipment
         if (hop.use === 'Boil') {
