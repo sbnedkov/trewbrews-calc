@@ -6,6 +6,7 @@ trewbrews.config(function($interpolateProvider) {
 });
 
 trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', function ($scope, srm, gravity, ibu, utils) {
+    var _ = window._;
     $scope.boilsize = 28.5;
     $scope.size = 21;
     $scope.time = 60;
@@ -48,7 +49,6 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
         var yeast, boilSize, batchSize, efficiency, equipment;
         var grav;
 
-
         yeast = $scope.yeast && [JSON.parse($scope.yeast)] || [];
 
         boilSize = $scope.boilsize && JSON.parse($scope.boilsize);
@@ -60,7 +60,7 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
 
         $scope.og = utils.round(grav.og);
         $scope.fg = utils.round(grav.fg);
-        $scope.abv = utils.round(gravity.calculateAbv(grav));
+        $scope.abv = gravity.calculateAbv(grav);
     }, true);
 
     // Watch for IBU change
@@ -76,6 +76,38 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
         tmp = ibu.calculateIbu(getHops(), getHopsSizes(), getFermentables(), getSizes(), boilSize, batchSize, time, $scope.og, equipment);
         $scope.ibu = utils.round(tmp);
     }, true);
+
+    $scope.$watch('style', function (style) {
+        if (style) {
+            style = JSON.parse(style);
+
+            var ogm = style.og.match(/^([0-9\.]+)-([0-9\.]+)\+?$/);
+            $scope.oglow = parseFloat(ogm[1]);
+            $scope.oghi = parseFloat(ogm[2]) / 1000 + 1;
+
+            var fgm = style.fg.match(/^([0-9\.]+)-([0-9\.]+)\+?$/);
+            $scope.fglow = parseFloat(fgm[1]);
+            $scope.fghi = parseFloat(fgm[2]) / 1000 + 1;
+
+            var ibum = style.ibu.match(/^([0-9\.]+)-([0-9\.]+)\+?$/);
+            $scope.ibulow = parseFloat(ibum[1]);
+            $scope.ibuhi = parseFloat(ibum[2]);
+
+            var srmm = style.srm.match(/^([0-9\.]+)-([0-9\.]+)\+?$/);
+            $scope.srmlow = parseFloat(srmm[1]);
+            $scope.srmhi = parseFloat(srmm[2]);
+
+            $scope.abvlow = gravity.calculateAbv({
+                og: $scope.oglow,
+                fg: $scope.fglow
+            });
+
+            $scope.abvhi = gravity.calculateAbv({
+                og: $scope.oghi,
+                fg: $scope.fghi
+            });
+        }
+    });
 
     function getFermentables () {
         return _.map($scope.fermentablesarr, function (f) {

@@ -47,7 +47,7 @@ trewbrews.service('gravity', ['utils', function (utils) {
     };
 
     gravity.calculateAbv = function (grav) {
-        return 131 * (grav.og - grav.fg);
+        return utils.round(131 * (grav.og - grav.fg));
     };
 
     return gravity;

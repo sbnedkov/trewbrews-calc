@@ -5,6 +5,7 @@ var hbs = require('hbs');
 var fermentables = require('./data/fermentables.json');
 var hops = require('./data/hops.json');
 var yeasts = require('./data/yeasts.json');
+var styles = require('./data/styles.json');
 
 var app = express();
 
@@ -40,6 +41,22 @@ app.get('/', function (req, res) {
                     name: yeast.name,
                     data: JSON.stringify(yeast)
                 };
+            }).
+            value(),
+        styles: _.chain(styles).
+            filter(function (style) {
+                return _.all(style, function (value) {
+                    return value !== 'Variable';
+                });
+            }).
+            map(function (style) {
+                return {
+                    name: style.name,
+                    data: JSON.stringify(style)
+                };
+            }).
+            sortBy(function (style) {
+                return style.name;
             }).
             value()
     });

@@ -11,15 +11,14 @@
 
   <body>
     <div ng-controller="calculator">
-    <!--
-      <label>Equipment</label>
-      <select ng-model="equipment">
-        {{#each equipments}}
+      <label>Style</label>
+      <select ng-model="style" name="style">
+        {{#each styles}}
           <option value="{{data}}">{{name}}</option>
         {{/each}}
       </select>
       <hr>
-    -->
+
       <label>Boil size</label>
       <input ng-model="boilsize" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="boilsize"/> liters
       <br>
@@ -79,19 +78,24 @@
 
       <label>Original gravity: <label>
       <input ng-model="og" id="og" readonly="readonly">
+      {[{oglow}]}-{[{oghi}]}
       <br>
       <label>Final gravity: <label>
       <input ng-model="fg" id="fg" readonly="readonly">
+      {[{fglow}]}-{[{fghi}]}
       <br>
       <label>ABV: <label>
       <input ng-model="abv" id="abv" readonly="readonly">
+      {[{abvlow}]}-{[{abvhi}]}
       <br>
       <label>IBU: <label>
       <input ng-model="ibu" id="ibu" readonly="readonly">
+      {[{ibulow}]}-{[{ibuhi}]}
       <br>
       <label>SRM: <label>
       <input ng-model="srm" id="srm" readonly="readonly">
       <span style="vertical-align: bottom; width: 60px; height: 21px; display: inline-block; background: {[{srmColor()}]};"></span>
+      {[{srmlow}]}-{[{srmhi}]}
       <br>
   </body>
 </html>
