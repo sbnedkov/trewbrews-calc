@@ -5,8 +5,9 @@ trewbrews.service('srm', ['utils', function (utils) {
     };
 
     srm.calculateSrm = function (fermentables, fermentableSizes, boilSize, batchSize) {
+        var batchSizeGallons = utils.litersToGallons(batchSize);
         var mcu = _.reduce(fermentables, function (acc, f, key) {
-            acc += f ? (f.color * 8.34538 * fermentableSizes[key]) / batchSize : 0;
+            acc += (f.srm * utils.kgsToLbs(fermentableSizes[key])) / batchSizeGallons;
             return acc;
         }, 0);
 
@@ -26,35 +27,6 @@ trewbrews.service('srm', ['utils', function (utils) {
         b = (b < 0) ? 0 : ((b > 255)? 255 : b);
 
         return 'rgb(' + Math.round(r) + ',' + Math.round(g) + ',' + Math.round(b) + ')';
-        /*
-        if (srm <= 2) {
-            return '#F8F753';
-        } else if (srm <= 3) {
-            return '#F6F513';
-        } else if (srm <= 4) {
-            return '#ECE61A';
-        } else if (srm <= 6) {
-            return '#D5BC26';
-        } else if (srm <= 8) {
-            return '#BF923B';
-        } else if (srm <= 10) {
-            return '#BF813A';
-        } else if (srm <= 13) {
-            return '#BC6733';
-        } else if (srm <= 17) {
-            return '#8D4C32';
-        } else if (srm <= 20) {
-            return '#5D341A';
-        } else if (srm <= 24) {
-            return '#261716';
-        } else if (srm <= 29) {
-            return '#0F0B0A';
-        } else if (srm <= 35) {
-            return '#080707';
-        } else if (srm) {
-            return '#030403';
-        }
-        */
     };
 
     return srm;
