@@ -1,0 +1,738 @@
+[
+    {
+        "fg": "Style Final   B",
+        "ibu": "itter Rang",
+        "name": "les                         Va",
+        "og": "ravity Range",
+        "srm": "SRM Range",
+        "value": null
+    },
+    {
+        "fg": "o Style Selected",
+        "ibu": "0",
+        "name": "e",
+        "og": "Style SelectedN",
+        "srm": "0",
+        "value": 58
+    },
+    {
+        "fg": ".998-1.008",
+        "ibu": "8-12",
+        "name": "Lite American Lager",
+        "og": "1.030-40",
+        "srm": "2-3",
+        "type": "",
+        "value": 1
+    },
+    {
+        "fg": "1.004-10",
+        "ibu": "8-15",
+        "name": "Standard American Lager",
+        "og": "1.040-50",
+        "srm": "2-4",
+        "type": "",
+        "value": 2
+    },
+    {
+        "fg": "1.008-12",
+        "ibu": "15-25",
+        "name": "Premium American Lager",
+        "og": "1.046-56",
+        "srm": "2-6",
+        "type": "",
+        "value": 3
+    },
+    {
+        "fg": "1.008-12",
+        "ibu": "16-22",
+        "name": "Munich Helles",
+        "og": "1.045-51",
+        "srm": "3-5",
+        "type": "",
+        "value": 4
+    },
+    {
+        "fg": "1.010-15",
+        "ibu": "23-30",
+        "name": "Dortmunder Export",
+        "og": "1.048-56",
+        "srm": "4-6",
+        "type": "",
+        "value": 5
+    },
+    {
+        "fg": "1.008-13",
+        "ibu": "25-45",
+        "name": "German Pilsner (Pils)",
+        "og": "1.044-50",
+        "srm": "2-5",
+        "type": "",
+        "value": 6
+    },
+    {
+        "fg": "1.013-17",
+        "ibu": "35-45",
+        "name": "Bohemian Pilsener",
+        "og": "1.044-56",
+        "srm": "3.5-6",
+        "type": "",
+        "value": 7
+    },
+    {
+        "fg": "1.010-15",
+        "ibu": "25-40",
+        "name": "Classic American Pilsner",
+        "og": "1.044-60",
+        "srm": "3-6",
+        "type": "",
+        "value": 8
+    },
+    {
+        "fg": "1.010-14",
+        "ibu": "18-30",
+        "name": "Vienna Lager",
+        "og": "1.046-52",
+        "srm": "10-16",
+        "type": "",
+        "value": 9
+    },
+    {
+        "fg": "1.012-16",
+        "ibu": "20-28",
+        "name": "Oktoberfest/Marzen",
+        "og": "1.050-56",
+        "srm": "7-14",
+        "type": "",
+        "value": 10
+    },
+    {
+        "fg": "1.008-12",
+        "ibu": "8-20",
+        "name": "Dark American Lager",
+        "og": "1.044-56",
+        "srm": "14-22",
+        "type": "",
+        "value": 11
+    },
+    {
+        "fg": "1.010-16",
+        "ibu": "18-28",
+        "name": "Munich Dunkel",
+        "og": "1.048-56",
+        "srm": "14-28",
+        "type": "",
+        "value": 12
+    },
+    {
+        "fg": "1.010-16",
+        "ibu": "22-32",
+        "name": "Schwarzbier (Black Beer)",
+        "og": "1.046-52",
+        "srm": "17-30+",
+        "type": "",
+        "value": 13
+    },
+    {
+        "fg": "1.011-18",
+        "ibu": "23-35+",
+        "name": "Maibock/Helles Bock",
+        "og": "1.064-72",
+        "srm": "6-11",
+        "type": "",
+        "value": 14
+    },
+    {
+        "fg": "1.013-19",
+        "ibu": "20-27",
+        "name": "Traditional Bock",
+        "og": "1.064-72",
+        "srm": "14-22",
+        "type": "",
+        "value": 15
+    },
+    {
+        "fg": "1.016-24+",
+        "ibu": "16-26+",
+        "name": "Doppelbock",
+        "og": "1.072-96+",
+        "srm": "6-25",
+        "type": "",
+        "value": 16
+    },
+    {
+        "fg": "1.020-35+",
+        "ibu": "23-35+",
+        "name": "Eisbock",
+        "og": "1.078-120+",
+        "srm": "18-30+",
+        "type": "",
+        "value": 17
+    },
+    {
+        "fg": "1.006-12",
+        "ibu": "15-20+",
+        "name": "Cream Ale",
+        "og": "1.042-55",
+        "srm": "2.5-5",
+        "type": "",
+        "value": 18
+    },
+    {
+        "fg": "1.008-13",
+        "ibu": "15-28",
+        "name": "Blonde Ale",
+        "og": "1.038-54",
+        "srm": "3-6",
+        "type": "",
+        "value": 19
+    },
+    {
+        "fg": "1.007-11",
+        "ibu": "20-30",
+        "name": "Kolsch",
+        "og": "1.044-50",
+        "srm": "3.5-5",
+        "type": "",
+        "value": 20
+    },
+    {
+        "fg": "1.008-13",
+        "ibu": "15-30",
+        "name": "American Wheat or Rye",
+        "og": "1.040-55",
+        "srm": "3-6",
+        "type": "",
+        "value": 21
+    },
+    {
+        "fg": "1.010-15",
+        "ibu": "25-40",
+        "name": "Northern German Altbier",
+        "og": "1.046-54",
+        "srm": "13-19",
+        "type": "",
+        "value": 22
+    },
+    {
+        "fg": "1.011-14",
+        "ibu": "30-45",
+        "name": "California Common Beer",
+        "og": "1.048-54",
+        "srm": "10-14",
+        "type": "",
+        "value": 23
+    },
+    {
+        "fg": "1.010-15",
+        "ibu": "35-50",
+        "name": "Dusseldorf Altbier",
+        "og": "1.046-54",
+        "srm": "13-17",
+        "type": "",
+        "value": 24
+    },
+    {
+        "fg": "1.007-11",
+        "ibu": "25-35",
+        "name": "Standard/Ordinary Bitter",
+        "og": "1.032-40",
+        "srm": "4-14",
+        "type": "",
+        "value": 25
+    },
+    {
+        "fg": "1.008-12",
+        "ibu": "25-40",
+        "name": "Special/Best/Premium Bitte",
+        "og": "1.040-48",
+        "srm": "5-16",
+        "type": "",
+        "value": 26
+    },
+    {
+        "fg": "1.010-16",
+        "ibu": "30-50+",
+        "name": "Extra Special/Strong Bitte",
+        "og": "1.048-60+",
+        "srm": "6-18",
+        "type": "",
+        "value": 27
+    },
+    {
+        "fg": "1.010-13",
+        "ibu": "10-20",
+        "name": "Scottish Light 60/-",
+        "og": "1.030-35",
+        "srm": "9-17",
+        "type": "",
+        "value": 28
+    },
+    {
+        "fg": "1.010-15",
+        "ibu": "10-25",
+        "name": "Scottish Heavy 70/-",
+        "og": "1.035-40",
+        "srm": "9-17",
+        "type": "",
+        "value": 29
+    },
+    {
+        "fg": "1.010-16",
+        "ibu": "15-30",
+        "name": "Scottish Export 80/-",
+        "og": "1.040-54",
+        "srm": "9-17",
+        "type": "",
+        "value": 30
+    },
+    {
+        "fg": "1.010-14",
+        "ibu": "17-28",
+        "name": "Irish Red Ale",
+        "og": "1.044-60",
+        "srm": "9-18",
+        "type": "",
+        "value": 31
+    },
+    {
+        "fg": "1.018-30+",
+        "ibu": "17-35",
+        "name": "Strong Scotch Ale",
+        "og": "1.070-130",
+        "srm": "14-25",
+        "type": "",
+        "value": 32
+    },
+    {
+        "fg": "1.010-15",
+        "ibu": "30-45+",
+        "name": ". American Pale Ale",
+        "og": "1.045-60",
+        "srm": "5-14",
+        "type": "",
+        "value": 33
+    },
+    {
+        "fg": "1.010-15",
+        "ibu": "25-40+",
+        "name": ". American Amber Ale",
+        "og": "1.045-60",
+        "srm": "10-17",
+        "type": "",
+        "value": 34
+    },
+    {
+        "fg": "1.010-16",
+        "ibu": "20-40+",
+        "name": ". American Brown Ale",
+        "og": "1.045-60",
+        "srm": "18-35",
+        "type": "",
+        "value": 35
+    },
+    {
+        "fg": "1.008-13",
+        "ibu": "10-25",
+        "name": ". Mild",
+        "og": "1.030-38",
+        "srm": "12-25",
+        "type": "",
+        "value": 36
+    },
+    {
+        "fg": "1.011-14",
+        "ibu": "12-20",
+        "name": ". Southern English Brown",
+        "og": "1.035-42",
+        "srm": "19-35",
+        "type": "",
+        "value": 37
+    },
+    {
+        "fg": "1.008-13",
+        "ibu": "20-30",
+        "name": ". Northern English Brown",
+        "og": "1.040-52",
+        "srm": "12-22",
+        "type": "",
+        "value": 38
+    },
+    {
+        "fg": "1.008-14",
+        "ibu": "18-35",
+        "name": ". Brown Porter",
+        "og": "1.040-52",
+        "srm": "20-30",
+        "type": "",
+        "value": 39
+    },
+    {
+        "fg": "1.012-16",
+        "ibu": "25-50+",
+        "name": ". Robust Porter",
+        "og": "1.048-65",
+        "srm": "22-35+",
+        "type": "",
+        "value": 40
+    },
+    {
+        "fg": "1.016-24",
+        "ibu": "20-40",
+        "name": ". Baltic Porter",
+        "og": "1.060-90",
+        "srm": "17-30",
+        "type": "",
+        "value": 41
+    },
+    {
+        "fg": "1.007-11",
+        "ibu": "30-45",
+        "name": ". Dry Stout",
+        "og": "1.036-50",
+        "srm": "25-40+",
+        "type": "",
+        "value": 42
+    },
+    {
+        "fg": "1.010-23",
+        "ibu": "25-40",
+        "name": ". Sweet Stout",
+        "og": "1.042-56",
+        "srm": "30-40+",
+        "type": "",
+        "value": 43
+    },
+    {
+        "fg": "1.010-18",
+        "ibu": "25-40",
+        "name": ". Oatmeal Stout",
+        "og": "1.048-65",
+        "srm": "22-40+",
+        "type": "",
+        "value": 44
+    },
+    {
+        "fg": "1.010-18",
+        "ibu": "30-70",
+        "name": ". Foreign Extra Stout",
+        "og": "1.056-75",
+        "srm": "30-40+",
+        "type": "",
+        "value": 45
+    },
+    {
+        "fg": "1.010-22",
+        "ibu": "35-75",
+        "name": ". American Stout",
+        "og": "1.050-75",
+        "srm": "30-40+",
+        "type": "",
+        "value": 46
+    },
+    {
+        "fg": "1.018-30+",
+        "ibu": "50-90+",
+        "name": ". Russian Imperial Stout",
+        "og": "1.075-95+",
+        "srm": "30-40+",
+        "type": "",
+        "value": 47
+    },
+    {
+        "fg": "1.010-18",
+        "ibu": "40-60",
+        "name": ". English IPA",
+        "og": "1.050-75",
+        "srm": "8-14",
+        "type": "",
+        "value": 48
+    },
+    {
+        "fg": "1.010-18",
+        "ibu": "40-60+",
+        "name": ". American IPA",
+        "og": "1.056-75",
+        "srm": "6-15",
+        "type": "",
+        "value": 49
+    },
+    {
+        "fg": "1.012-20",
+        "ibu": "60-100+",
+        "name": ". Imperial IPA",
+        "og": "1.075-90+",
+        "srm": "8-15",
+        "type": "",
+        "value": 50
+    },
+    {
+        "fg": "1.010-14",
+        "ibu": "28-15",
+        "name": ". Weizen/Weissbier",
+        "og": "1.044-52",
+        "srm": "2-8",
+        "type": "",
+        "value": 51
+    },
+    {
+        "fg": "1.010-14",
+        "ibu": "10-18",
+        "name": ". Dunkelweizen",
+        "og": "1.044-56",
+        "srm": "14-23",
+        "type": "",
+        "value": 52
+    },
+    {
+        "fg": "1.015-22",
+        "ibu": "15-30",
+        "name": ". Weizenbock",
+        "og": "1.064-80+",
+        "srm": "12-25",
+        "type": "",
+        "value": 53
+    },
+    {
+        "fg": "1.010-14",
+        "ibu": "10-20",
+        "name": ". Roggenbier (German Rye)",
+        "og": "1.046-56",
+        "srm": "14-19",
+        "type": "",
+        "value": 54
+    },
+    {
+        "fg": "1.008-12",
+        "ibu": "10-20",
+        "name": ". Witbier",
+        "og": "1.044-52",
+        "srm": "2-4",
+        "type": "",
+        "value": 55
+    },
+    {
+        "fg": "1.010-14",
+        "ibu": "20-30",
+        "name": ". Belgian Pale Ale",
+        "og": "1.048-54",
+        "srm": "8-14",
+        "type": "",
+        "value": 56
+    },
+    {
+        "fg": "1.010-16",
+        "ibu": "25-45",
+        "name": ". Saison",
+        "og": "1.048-80",
+        "srm": "5-12",
+        "type": "",
+        "value": 57
+    },
+    {
+        "fg": "1.012-18",
+        "ibu": "20-30",
+        "name": ". Biere de Garde",
+        "og": "1.060-80",
+        "srm": "6-19",
+        "type": "",
+        "value": 58
+    },
+    {
+        "fg": "Variable",
+        "ibu": "Variable",
+        "name": ". Belgian Specialty Ale",
+        "og": "Variable",
+        "srm": "Variable",
+        "type": "",
+        "value": 59
+    },
+    {
+        "fg": "1.004-6",
+        "ibu": "3-8",
+        "name": ". Berliner Weisse",
+        "og": "1.028-32",
+        "srm": "2-3",
+        "type": "",
+        "value": 60
+    },
+    {
+        "fg": "1.008-16",
+        "ibu": "15-25",
+        "name": ". Flanders Red Ale",
+        "og": "1.046-54",
+        "srm": "10-16",
+        "type": "",
+        "value": 61
+    },
+    {
+        "fg": "1.012-16",
+        "ibu": "15-25",
+        "name": ". Flanders Brown/Oud Bruin",
+        "og": "1.043-77",
+        "srm": "15-20",
+        "type": "",
+        "value": 62
+    },
+    {
+        "fg": "1.000-10",
+        "ibu": "up to 10",
+        "name": ". Straight (Unblended) Lamb",
+        "og": "1.040-54",
+        "srm": "3-7",
+        "type": "",
+        "value": 63
+    },
+    {
+        "fg": "1.000-6",
+        "ibu": "up to 10",
+        "name": ". Gueuze",
+        "og": "1.040-60",
+        "srm": "3-7",
+        "type": "",
+        "value": 64
+    },
+    {
+        "fg": "1.000-10",
+        "ibu": "up to 10",
+        "name": ". Fruit Lambic",
+        "og": "1.040-60",
+        "srm": "3-7",
+        "type": "",
+        "value": 65
+    },
+    {
+        "fg": "1.008-16",
+        "ibu": "20-30",
+        "name": ". Belgian Blonde Ale",
+        "og": "1.062-75",
+        "srm": "4-6",
+        "type": "",
+        "value": 66
+    },
+    {
+        "fg": "1.010-18",
+        "ibu": "15-25",
+        "name": ". Belgian Dubbel",
+        "og": "1.062-75",
+        "srm": "10-14",
+        "type": "",
+        "value": 67
+    },
+    {
+        "fg": "1.010-16",
+        "ibu": "25-38",
+        "name": ". Belgian Tripel",
+        "og": "1.075-85",
+        "srm": "4.5-6",
+        "type": "",
+        "value": 68
+    },
+    {
+        "fg": "1.010-16",
+        "ibu": "25-35",
+        "name": ". Belgian Golden Strong Ale",
+        "og": "1.070-95",
+        "srm": "4-6",
+        "type": "",
+        "value": 69
+    },
+    {
+        "fg": "1.010-24",
+        "ibu": "15-25+",
+        "name": ". Belgian Dark Strong Ale",
+        "og": "1.075-110+",
+        "srm": "15-20",
+        "type": "",
+        "value": 70
+    },
+    {
+        "fg": "1.015-22+",
+        "ibu": "30-60+",
+        "name": ". Old Ale",
+        "og": "1.060-90+",
+        "srm": "10-22+",
+        "type": "",
+        "value": 71
+    },
+    {
+        "fg": "1.018-30+",
+        "ibu": "35-70",
+        "name": ". English Barleywine",
+        "og": "1.080-120+",
+        "srm": "8-22",
+        "type": "",
+        "value": 72
+    },
+    {
+        "fg": "1.016-30+",
+        "ibu": "50-120+",
+        "name": ". American Barleywine",
+        "og": "1.080-120+",
+        "srm": "10-19",
+        "type": "",
+        "value": 73
+    },
+    {
+        "fg": "Variable",
+        "ibu": "Variable",
+        "name": "Fruit Beer",
+        "og": "Variable",
+        "srm": "Variable",
+        "type": "",
+        "value": 74
+    },
+    {
+        "fg": "Variable",
+        "ibu": "Variable",
+        "name": ". Spice/Herb/Vegetable Beer",
+        "og": "Variable",
+        "srm": "Variable",
+        "type": "",
+        "value": 75
+    },
+    {
+        "fg": "Variable",
+        "ibu": "Variable",
+        "name": ". XMas/Winter Spiced Beer",
+        "og": "Variable",
+        "srm": "Variable",
+        "type": "",
+        "value": 76
+    },
+    {
+        "fg": "1.012-16",
+        "ibu": "20-30",
+        "name": ". Classic Rauchbier",
+        "og": "1.050-56",
+        "srm": "14-22+",
+        "type": "",
+        "value": 77
+    },
+    {
+        "fg": "Variable",
+        "ibu": "Variable",
+        "name": ". Other Smoked Beer",
+        "og": "Variable",
+        "srm": "Variable",
+        "type": "",
+        "value": 78
+    },
+    {
+        "fg": "Variable",
+        "ibu": "Variable",
+        "name": ". Wood-Aged Beer",
+        "og": "Variable",
+        "srm": "Variable",
+        "type": "",
+        "value": 79
+    },
+    {
+        "fg": "Variable",
+        "ibu": "Variable",
+        "name": "Specialty Beer",
+        "og": "Variable",
+        "srm": "Variable",
+        "type": "",
+        "value": 80
+    }
+]
