@@ -1,6 +1,7 @@
 var trewbrews = angular.module('trewbrews');
 
 trewbrews.service('srm', ['utils', function (utils) {
+    var _ = window._;
     var srm = {
     };
 

@@ -1,6 +1,7 @@
 var trewbrews = angular.module('trewbrews');
 
 trewbrews.service('gravity', ['utils', function (utils) {
+    var _ = window._;
     var gravity = {
     };
 
@@ -18,9 +19,6 @@ trewbrews.service('gravity', ['utils', function (utils) {
     gravity.calculateGravity = function (fermentables, sizes, yeasts, boilSize, size, efficiency) {
         fermentables = _.filter(fermentables, function (fermentable) {
             return fermentable;
-        });
-        yeasts = _.filter(yeasts, function (yeast) {
-            return yeast.attenuation;
         });
 
         var og, fg;
