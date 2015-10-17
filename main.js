@@ -11,7 +11,7 @@ var app = express();
 
 app.set('view engine', 'html');
 app.engine('html', hbs.__express);
-app.use("/src", express.static(__dirname + "/src"));
+app.use('/src', express.static(__dirname + '/src'));
 
 app.get('/', function (req, res) {
     res.render('main.hbs', {
@@ -62,6 +62,6 @@ app.get('/', function (req, res) {
     });
 });
 
-app.listen(31310);
+app.listen(process.env.PORT || 31310);
 
 console.log('Server started');
