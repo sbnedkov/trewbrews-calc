@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
+  "scripts": {
+      "start": "node ./main.js"
+  },
   "author": "sveto.n@gmail.com",
   "license": "ISC",
   "dependencies": {
