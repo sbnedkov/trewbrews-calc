@@ -5,7 +5,7 @@ var server = require( 'gulp-develop-server' );
 var bower = require('gulp-bower');
 
 gulp.task('watch-src', function () {
-    return gulp.watch(['src/**/*.js', 'public/**/*.js'], ['restart-server']);
+    return gulp.watch(['src/**/*.js', 'public/**/*.js', 'views/**/*.hbs'], ['restart-server']);
 });
 
 gulp.task('dev', ['watch-src', 'start-server']);

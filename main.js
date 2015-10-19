@@ -12,6 +12,7 @@ var app = express();
 app.set('view engine', 'html');
 app.engine('html', hbs.__express);
 app.use('/src', express.static(__dirname + '/src'));
+app.use('/bower_components', express.static(__dirname + '/bower_components'));
 
 app.get('/', function (req, res) {
     res.render('main.hbs', {
@@ -62,6 +63,6 @@ app.get('/', function (req, res) {
     });
 });
 
-app.listen(process.env.PORT || 31310);
+app.listen(process.env.PORT || 31314);
 
 console.log('Server started');
