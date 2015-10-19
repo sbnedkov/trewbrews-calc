@@ -1,104 +1,120 @@
 <html ng-app="trewbrews">
   <head>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"></style>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body style="background-color: transparent; margin: 20px;">
-    <div ng-controller="calculator" style="width: 50%; margin: auto;">
-      <div class="form-group">
-          <label>Style</label>
-          <select class="form-control" ng-model="style" name="style">
-            {{#each styles}}
-              <option value="{{data}}">{{name}}</option>
-            {{/each}}
-          </select>
+  <body>
+      <div class="header">
       </div>
-
-      <div class="form-group">
-          <label>Boil size (liters)</label>
-          <input class="form-control" ng-model="boilsize" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="boilsize"/>
-      </div>
-
-      <div class="form-group">
-          <label>Batch size (liters)</label>
-          <input class="form-control" ng-model="size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="size"/>
-      </div>
-
-      <div class="form-group">
-          <label>Boil time (minutes)</label>
-          <input class="form-control" ng-model="time" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="time"/>
-      </div>
-
-      <div class="form-group">
-          <label>Brewhouse efficiency (%)</label>
-          <input class="form-control" ng-model="efficiency" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="efficiency"/>
-      </div>
-
-      <div class="form-group">
-          <label>Fermentables (kg)</label>
-          <br>
-          <button class="btn button-default" type="button" ng-click="addFermentable();">Add fermentable</button>
-          <br>
-          <div ng-repeat="fermentable in fermentablesarr">
-            <select class="form-control" ng-model="fermentable.fermentable">
-              {{#each fermentables}}
-                <option value="{{data}}">{{name}}</option>
-              {{/each}}
-            </select>
-            <input class="form-control" ng-model="fermentable.size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/">
-            <a href="javascript:;" ng-click="deleteFermentable($index);">Delete</a>
+      <div class="main">
+          <div class="text-header the-header">
+            <span>The</span>
           </div>
-      </div>
-
-      <div class="form-group">
-          <label>Hops (g)</label>
-          <br>
-          <button class="btn button-default" type="button" ng-click="addHop();">Add hops</button>
-          <br>
-          <div ng-repeat="hop in hopsarr">
-            <select class="form-control" ng-model="hop.hop">
-              {{#each hops}}
-                <option value="{{data}}">{{name}}</option>
-              {{/each}}
-            </select>
-            <input class="form-control" ng-model="hop.size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/">
-            <a href="javascript:;" ng-click="deleteHop($index);">Delete</a>
+          <div class="text-header brewshop-header">
+            <span>BREW SHOP</span>
           </div>
-      </div>
+          <div class="text-header sofia-header">
+            <span>Sofia</span>
+          </div>
+          <div class="calculator-container">
+            <div class="calculator" ng-controller="calculator" style="">
+              <div class="form-group">
+                  <label>Style</label>
+                  <select class="form-control" ng-model="style" name="style">
+                    {{#each styles}}
+                      <option value="{{data}}">{{name}}</option>
+                    {{/each}}
+                  </select>
+              </div>
 
-      <div class="form-group">
-          <label>Yeast</label>
-          <select class="form-control" ng-model="yeast" name="yeast">
-            {{#each yeasts}}
-              <option value="{{data}}">{{name}}</option>
-            {{/each}}
-          </select>
-      </div>
+              <div class="form-group">
+                  <label>Boil size (liters)</label>
+                  <input class="form-control" ng-model="boilsize" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="boilsize"/>
+              </div>
 
-      <div class="form-group">
-          <label for="og">Original gravity: {[{oglow}]}-{[{oghi}]}</label>
-          <input class="form-control" ng-model="og" id="og" readonly="readonly">
-      </div>
+              <div class="form-group">
+                  <label>Batch size (liters)</label>
+                  <input class="form-control" ng-model="size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="size"/>
+              </div>
 
-      <div class="form-group">
-          <label>Final gravity: {[{fglow}]}-{[{fghi}]}</label>
-          <input class="form-control" ng-model="fg" id="fg" readonly="readonly">
-      </div>
+              <div class="form-group">
+                  <label>Boil time (minutes)</label>
+                  <input class="form-control" ng-model="time" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="time"/>
+              </div>
 
-      <div class="form-group">
-          <label>ABV: {[{abvlow}]}-{[{abvhi}]}</label>
-          <input class="form-control" ng-model="abv" id="abv" readonly="readonly">
-      </div>
+              <div class="form-group">
+                  <label>Brewhouse efficiency (%)</label>
+                  <input class="form-control" ng-model="efficiency" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="efficiency"/>
+              </div>
 
-      <div class="form-group">
-          <label>IBU: {[{ibulow}]}-{[{ibuhi}]}</label>
-          <input class="form-control" ng-model="ibu" id="ibu" readonly="readonly">
-      </div>
+              <div class="form-group">
+                  <label>Fermentables (kg)</label>
+                  <br>
+                  <button class="btn button-default" type="button" ng-click="addFermentable();">Add fermentable</button>
+                  <br>
+                  <div ng-repeat="fermentable in fermentablesarr">
+                    <select class="form-control" ng-model="fermentable.fermentable">
+                      {{#each fermentables}}
+                        <option value="{{data}}">{{name}}</option>
+                      {{/each}}
+                    </select>
+                    <input class="form-control" ng-model="fermentable.size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/">
+                    <a href="javascript:;" ng-click="deleteFermentable($index);">Delete</a>
+                  </div>
+              </div>
 
-      <div class="form-group">
-          <label>SRM: {[{srmlow}]}-{[{srmhi}]}</label>
-          <span style="width: 5%; height: 21px; vertical-align: middle; display: inline-block; background: {[{srmColor()}]};"></span>
-          <input class="form-control" ng-model="srm" id="srm" readonly="readonly">
+              <div class="form-group">
+                  <label>Hops (g)</label>
+                  <br>
+                  <button class="btn button-default" type="button" ng-click="addHop();">Add hops</button>
+                  <br>
+                  <div ng-repeat="hop in hopsarr">
+                    <select class="form-control" ng-model="hop.hop">
+                      {{#each hops}}
+                        <option value="{{data}}">{{name}}</option>
+                      {{/each}}
+                    </select>
+                    <input class="form-control" ng-model="hop.size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/">
+                    <a href="javascript:;" ng-click="deleteHop($index);">Delete</a>
+                  </div>
+              </div>
+
+              <div class="form-group">
+                  <label>Yeast</label>
+                  <select class="form-control" ng-model="yeast" name="yeast">
+                    {{#each yeasts}}
+                      <option value="{{data}}">{{name}}</option>
+                    {{/each}}
+                  </select>
+              </div>
+
+              <div class="form-group">
+                  <label for="og">Original gravity: {[{oglow}]}-{[{oghi}]}</label>
+                  <input class="form-control" ng-model="og" id="og" readonly="readonly">
+              </div>
+
+              <div class="form-group">
+                  <label>Final gravity: {[{fglow}]}-{[{fghi}]}</label>
+                  <input class="form-control" ng-model="fg" id="fg" readonly="readonly">
+              </div>
+
+              <div class="form-group">
+                  <label>ABV: {[{abvlow}]}-{[{abvhi}]}</label>
+                  <input class="form-control" ng-model="abv" id="abv" readonly="readonly">
+              </div>
+
+              <div class="form-group">
+                  <label>IBU: {[{ibulow}]}-{[{ibuhi}]}</label>
+                  <input class="form-control" ng-model="ibu" id="ibu" readonly="readonly">
+              </div>
+
+              <div class="form-group">
+                  <label>SRM: {[{srmlow}]}-{[{srmhi}]}</label>
+                  <span style="width: 5%; height: 21px; vertical-align: middle; display: inline-block; background: {[{srmColor()}]};"></span>
+                  <input class="form-control" ng-model="srm" id="srm" readonly="readonly">
+              </div>
+          </div>
       </div>
 
       <script src="bower_components/angular/angular.min.js"></script>
@@ -109,5 +125,5 @@
       <script src="src/gravity.js"></script>
       <script src="src/ibu.js"></script>
       <script src="src/utils.js"></script>
-  </body>
+  <body>
 </html>

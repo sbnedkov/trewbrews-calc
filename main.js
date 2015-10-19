@@ -12,6 +12,8 @@ var app = express();
 app.set('view engine', 'html');
 app.engine('html', hbs.__express);
 app.use('/src', express.static(__dirname + '/src'));
+app.use('/img', express.static(__dirname + '/img'));
+app.use('/css', express.static(__dirname + '/css'));
 app.use('/bower_components', express.static(__dirname + '/bower_components'));
 
 app.get('/', function (req, res) {

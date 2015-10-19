@@ -1,0 +1,64 @@
+body {
+    background-color: #2B1502;
+}
+
+.text-header {
+    margin-top: -18px; /* Hack */
+    text-align: center;
+    width: 100%;
+}
+
+.the-header span {
+    margin: 0 auto;
+    font-family: cookie,cursive;
+    font-size: 65px;
+    color: #FFF;
+}
+
+.brewshop-header span {
+    margin: 0 auto;
+    font-family: impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+    font-size: 110px;
+    color: #FFF;
+}
+
+.sofia-header span {
+    margin: 0 auto;
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFF;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 52px;
+    background-color: #222;
+    z-index: 1000;
+}
+
+.main {
+    position: fixed;
+    top: 52px;
+    bottom: 52px;
+    width: 100%;
+    background: #222 url('../img/malt.jpg') no-repeat fixed 0 0;
+    z-index: 100;
+}
+
+.calculator-container {
+    position: absolute;
+    top: 250px;
+    bottom: 52px;
+    width: 50%;
+    margin: 0 25%;
+    overflow: auto;
+    background-color: rgba(255, 218, 170, 0.57);
+}
+
+.calculator {
+    padding: 20px 200px;
+}
