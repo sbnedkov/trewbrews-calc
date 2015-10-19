@@ -1,0 +1,15 @@
+{
+  "name": "trewbrews-calc",
+  "version": "1.0.0",
+  "homepage": "https://github.com/sbnedkov/trewbrews-calc",
+  "authors": [
+    "Svetoslav Nedkov <sveto.n@gmail.com>"
+  ],
+  "description": "A home brewing calculator.",
+  "main": "",
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "private": true
+}
