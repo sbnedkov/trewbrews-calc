@@ -10,7 +10,7 @@ gulp.task('watch-src', function () {
 
 gulp.task('dev', ['watch-src', 'start-server']);
 
-gulp.task('prod', function () {
+gulp.task('prod', ['bower'], function () {
     var server = spawn('node', ['./main.js']);
 
     server.stdout.on('data', function (data) {
