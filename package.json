@@ -4,13 +4,16 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-      "start": "node ./main.js"
+    "start": "./node_modules/.bin/gulp prod"
   },
   "author": "sveto.n@gmail.com",
   "license": "ISC",
   "dependencies": {
-      "lodash": "latest",
-      "hbs": "latest",
-      "express": "latest"
+    "express": "latest",
+    "gulp": "^3.9.0",
+    "gulp-bower": "0.0.10",
+    "gulp-develop-server": "^0.4.3",
+    "hbs": "latest",
+    "lodash": "latest"
   }
 }

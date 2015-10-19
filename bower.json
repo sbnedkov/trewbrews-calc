@@ -11,5 +11,8 @@
     "es6"
   ],
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "angular-bootstrap": "~0.14.2"
+  }
 }
