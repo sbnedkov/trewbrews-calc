@@ -2,32 +2,53 @@ body {
     background-color: #2B1502;
 }
 
+.title-container {
+    position: absolute;
+    width: 100%;
+    top: 20px;
+}
+
 .text-header {
-    margin-top: -18px; /* Hack */
     text-align: center;
     width: 100%;
 }
 
 .the-header span {
     margin: 0 auto;
-    font-family: cookie,cursive;
-    font-size: 65px;
+    font-family: lobster;
+    font-size: 28px;
     color: #FFF;
 }
 
 .brewshop-header span {
     margin: 0 auto;
     font-family: impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
-    font-size: 110px;
+    font-size: 66px;
     color: #FFF;
 }
 
 .sofia-header span {
     margin: 0 auto;
-    font-family: helvetica;
+    font-family: lobster;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 28px;
     color: #FFF;
+}
+
+.equation-text {
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    font-family: impact;
+    font-weight: bold;
+    font-size: 40px;
+    color: #FFF;
+}
+
+.bc-ruler {
+    width: 12%;
+    margin: 5px auto;
+    border-bottom: 2px solid white;
 }
 
 .header {
@@ -45,20 +66,76 @@ body {
     top: 52px;
     bottom: 52px;
     width: 100%;
-    background: #222 url('../img/malt.jpg') no-repeat fixed 0 0;
+    background: #222 url('../img/malt.jpg') no-repeat fixed center center;
     z-index: 100;
 }
 
 .calculator-container {
     position: absolute;
-    top: 250px;
-    bottom: 52px;
-    width: 50%;
-    margin: 0 25%;
+    top: 280px;
+    bottom: 20px;
+    width: 100%;
     overflow: auto;
+}
+
+.ingredient-container {
+    height: 300px;
+    margin: 0;
+}
+
+.batch-container {
+    position: absolute;
+    top: 220px;
+    width: 30%;
+    height: 40px;
+    margin: 0 35%;
+    overflow: auto;
+    background-color: rgba(255, 218, 170, 0.57);
+}
+
+.ingredient {
+    width: 80%;
+    height: 100%;
+    margin: 0 10%;
+    padding: 5px;
     background-color: rgba(255, 218, 170, 0.57);
 }
 
 .calculator {
     padding: 20px 200px;
+}
+
+.calculator-text {
+    margin: 0 5px;
+    font-family: lobster;
+    font-size: 16px;
+    color: #FFF;
+}
+
+.vertical-center {
+    top: 50%;
+    display: block;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.bc-input {
+    display: inline;
+    width: 180px;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.bc-input-small {
+    display: inline;
+    width: 50px;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.bc-input-smallest {
+    display: inline;
+    width: 20px;
+    font-size: 12px;
+    line-height: 12px;
 }
