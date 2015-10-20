@@ -1,5 +1,6 @@
 body {
     background-color: #2B1502;
+    font-family: arial;
 }
 
 .title-container {
@@ -87,9 +88,11 @@ body {
     position: absolute;
     top: 220px;
     width: 30%;
-    height: 40px;
+    height: 45px;
     margin: 0 35%;
+    padding: 5px 0 0 0;
     overflow: auto;
+    border: 1px solid #2B1502;
     background-color: rgba(255, 218, 170, 0.57);
 }
 
@@ -98,6 +101,7 @@ body {
     height: 100%;
     margin: 0 10%;
     padding: 5px;
+    border: 1px solid #2B1502;
     background-color: rgba(255, 218, 170, 0.57);
 }
 
@@ -138,4 +142,9 @@ body {
     width: 20px;
     font-size: 12px;
     line-height: 12px;
+}
+
+.delete-button {
+    color: lightgray;
+    font-weight: bold;
 }
