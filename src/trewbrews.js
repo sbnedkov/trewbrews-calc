@@ -123,7 +123,7 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
 
     function getSizes () {
         return _.map($scope.fermentablesarr, function (f) {
-            return parseInt(f.size);
+            return parseFloat(f.size);
         });
     }
 
@@ -135,13 +135,13 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
 
     function getHopsSizes () {
         return _.map($scope.hopsarr, function (h) {
-            return parseInt(h.size);
+            return parseFloat(h.size);
         });
     }
 
     function getHopsTimes () {
         return _.map($scope.hopsarr, function (h) {
-            return parseInt(h.time);
+            return parseFloat(h.time);
         });
     }
 }]);
