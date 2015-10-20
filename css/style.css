@@ -148,3 +148,26 @@ body {
     color: lightgray;
     font-weight: bold;
 }
+
+.info {
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+    color: white;
+    cursor: default;
+}
+
+.results {
+    background: rgba(255, 218, 170, 0.57) url('../img/beer.png') no-repeat 0 40px;
+    background-size: 200px auto;
+}
+
+.results-details {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: 100px;
+    font-family: arial;
+    font-size: 10px;
+    color: #FFF;
+}

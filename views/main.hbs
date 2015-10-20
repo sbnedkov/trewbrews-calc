@@ -80,6 +80,7 @@
                       </div>
                       <br>
                       <button class="btn button-default" type="button" ng-click="addFermentable();">ADD</button>
+                      <i class="info fa fa-2x fa-info-circle"></i>
                       <span class="equation-text">+</span>
                   </div>
               </div>
@@ -97,11 +98,12 @@
                         </select>
                         <i ng-click="deleteHop($index);" class="btn delete-button fa fa-times"></i>
                         <br>
-                        <input class="form-control bc-input-small" ng-model="hope.time" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/">
+                        <input class="form-control bc-input-small" ng-model="hop.time" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/">
                         <span>minutes</span>
                       </div>
                       <br>
                       <button class="btn button-default" type="button" ng-click="addHop();">ADD</button>
+                      <i class="info fa fa-2x fa-info-circle"></i>
                       <span class="equation-text">+</span>
                   </div>
               </div>
@@ -113,11 +115,29 @@
                           <option value="{{data}}">{{name}}</option>
                         {{/each}}
                       </select>
+                      <i class="info fa fa-2x fa-info-circle"></i>
                       <span class="equation-text">=</span>
                   </div>
               </div>
               <div class="ingredient-container form-group col-md-3">
-                  <div class="ingredient">
+                  <div class="ingredient results">
+                      <div class="results-details">
+                          <span>OG: </span>
+                          <span>{[{og}]}</span>
+                          <br>
+                          <span>FG: </span>
+                          <span>{[{fg}]}</span>
+                          <br>
+                          <span>ABV: </span>
+                          <span>{[{abv}]}</span>
+                          <br>
+                          <span>IBU: </span>
+                          <span>{[{ibu}]}</span>
+                          <br>
+                          <span>SRM: </span>
+                          <span>{[{srm}]}</span>
+                      </div>
+                  <!--
                       <label for="og">OG: {[{oglow}]}-{[{oghi}]}</label>
                       <input class="form-control bc-input-small" ng-model="og" id="og" readonly="readonly">
                       <br>
@@ -133,6 +153,7 @@
                       <label>SRM: {[{srmlow}]}-{[{srmhi}]}</label>
                       <span style="width: 5%; height: 21px; vertical-align: middle; display: inline-block; background: {[{srmColor()}]};"></span>
                       <input class="form-control bc-input-small" ng-model="srm" id="srm" readonly="readonly">
+                  -->
                   </div>
               </div>
           </div>

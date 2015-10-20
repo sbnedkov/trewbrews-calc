@@ -5,19 +5,19 @@ trewbrews.service('ibu', ['utils', function (utils) {
     var ibu = {
     };
 
-    ibu.calculateIbu = function (hops, sizes, fermentables, fsizes, boilSize, batchSize, boilTime, og) {
+    ibu.calculateIbu = function (hops, sizes, times, fermentables, fsizes, boilSize, batchSize, boilTime, og) {
+        console.log(hops);
         hops = _.filter(hops, function (hop) {
             return hop.alpha;
         });
         // TODO: for malt extracts we have bitterness in the fermentables
 
         return _.reduce(hops, function (acc, hop, idx) {
-            return acc + ibuFromHop(hop, sizes[idx], batchSize, boilTime, og) / hops.length;
+            return acc + ibuFromHop(hop, sizes[idx], batchSize, times[idx], og) / hops.length;
         }, 0);
     };
 
     function ibuFromHop (hop, size, batchSize, boilTime, og) {
-        // TODO: use per hop boil time
         return 1.65 * Math.pow(0.000125, og - 1) * ((1 - Math.pow(Math.E, -0.04 * boilTime)) / 4.15) *
             (((getAlpha(hop.alpha) / 100) * utils.gramsToOz(size) * 7490) / utils.litersToGallons(batchSize));
     }

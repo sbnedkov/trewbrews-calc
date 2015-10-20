@@ -31,7 +31,7 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
     };
 
     // Watch for color change
-    $scope.$watch('[fermentablesarr, boilsize, size]', function (vals) {
+    $scope.$watch('[fermentablesarr, boilsize, size]', function () {
         var boilSize, batchSize;
 
         boilSize = parseInt($scope.boilsize);
@@ -45,7 +45,7 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
     };
 
     // Watch for gravity change
-    $scope.$watch('[fermentablesarr, yeast, boilsize, size, efficiency, equipment]', function (vals) {
+    $scope.$watch('[fermentablesarr, yeast, boilsize, size, efficiency, equipment]', function () {
         var yeast, boilSize, batchSize, efficiency, equipment;
         var grav;
 
@@ -64,7 +64,7 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
     }, true);
 
     // Watch for IBU change
-    $scope.$watch('[fermentablesarr, hopsarr, boilsize, size, time, equipment]', function (vals) {
+    $scope.$watch('[fermentablesarr, hopsarr, boilsize, size, time, equipment]', function () {
         var boilSize, batchSize, time, equipment;
         var tmp;
 
@@ -73,7 +73,7 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
         time = $scope.time && JSON.parse($scope.time);
         equipment = $scope.equipment && JSON.parse($scope.equipment);
 
-        tmp = ibu.calculateIbu(getHops(), getHopsSizes(), getFermentables(), getSizes(), boilSize, batchSize, time, $scope.og, equipment);
+        tmp = ibu.calculateIbu(getHops(), getHopsSizes(), getHopsTimes(), getFermentables(), getSizes(), boilSize, batchSize, time, $scope.og, equipment);
         $scope.ibu = utils.round(tmp);
     }, true);
 
@@ -111,7 +111,7 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
 
     function getFermentables () {
         return _.map($scope.fermentablesarr, function (f) {
-            return JSON.parse(f.fermentable || "{}");
+            return JSON.parse(f.fermentable || '{}');
         });
     }
 
@@ -123,13 +123,19 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
 
     function getHops () {
         return _.map($scope.hopsarr, function (h) {
-            return JSON.parse(h.hop || "{}");
+            return JSON.parse(h.hop || '{}');
         });
     }
 
     function getHopsSizes () {
         return _.map($scope.hopsarr, function (h) {
             return parseInt(h.size);
+        });
+    }
+
+    function getHopsTimes () {
+        return _.map($scope.hopsarr, function (h) {
+            return parseInt(h.time);
         });
     }
 }]);
