@@ -7,7 +7,7 @@
   <body>
       <div class="header">
       </div>
-      <div class="main">
+      <div class="main" ng-controller="calculator">
           <div class="title-container">
               <div class="text-header the-header">
                 <span>The</span>
@@ -62,7 +62,7 @@
           -->
           </div>
           <div class="calculator-container">
-            <div class="calculator" ng-controller="calculator">
+            <div class="calculator">
               <div class="ingredient-container form-group col-md-3">
                   <div class="ingredient">
                       <label>Fermentables (kg)</label>
@@ -112,17 +112,21 @@
               </div>
               <div class="ingredient-container form-group col-md-3">
                   <div class="ingredient">
-                      <label for="og">Original gravity: {[{oglow}]}-{[{oghi}]}</label>
-                      <input class="form-control" ng-model="og" id="og" readonly="readonly">
-                      <label>Final gravity: {[{fglow}]}-{[{fghi}]}</label>
-                      <input class="form-control" ng-model="fg" id="fg" readonly="readonly">
+                      <label for="og">OG: {[{oglow}]}-{[{oghi}]}</label>
+                      <input class="form-control bc-input-small" ng-model="og" id="og" readonly="readonly">
+                      <br>
+                      <label>FG: {[{fglow}]}-{[{fghi}]}</label>
+                      <input class="form-control bc-input-small" ng-model="fg" id="fg" readonly="readonly">
+                      <br>
                       <label>ABV: {[{abvlow}]}-{[{abvhi}]}</label>
-                      <input class="form-control" ng-model="abv" id="abv" readonly="readonly">
+                      <input class="form-control bc-input-small" ng-model="abv" id="abv" readonly="readonly">
+                      <br>
                       <label>IBU: {[{ibulow}]}-{[{ibuhi}]}</label>
-                      <input class="form-control" ng-model="ibu" id="ibu" readonly="readonly">
+                      <input class="form-control bc-input-small" ng-model="ibu" id="ibu" readonly="readonly">
+                      <br>
                       <label>SRM: {[{srmlow}]}-{[{srmhi}]}</label>
                       <span style="width: 5%; height: 21px; vertical-align: middle; display: inline-block; background: {[{srmColor()}]};"></span>
-                      <input class="form-control" ng-model="srm" id="srm" readonly="readonly">
+                      <input class="form-control bc-input-small" ng-model="srm" id="srm" readonly="readonly">
                   </div>
               </div>
           </div>
