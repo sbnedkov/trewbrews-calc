@@ -166,8 +166,16 @@ body {
     position: absolute;
     width: 100%;
     top: 100px;
-    left: 100px;
+    left: 105px;
     font-family: arial;
     font-size: 10px;
     color: #FFF;
+}
+
+.check {
+    color: green;
+}
+
+.cross {
+    color: red;
 }

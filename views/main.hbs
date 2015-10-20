@@ -124,18 +124,28 @@
                       <div class="results-details">
                           <span>OG: </span>
                           <span>{[{og}]}</span>
+                          <i class="check fa fa-check" ng-show="oglow <= og && og <= oghi"></i>
+                          <i class="cross fa fa-times" ng-show="oglow > og || og > oghi"></i>
                           <br>
                           <span>FG: </span>
                           <span>{[{fg}]}</span>
+                          <i class="check fa fa-check" ng-show="fglow <= fg && fg <= fghi"></i>
+                          <i class="cross fa fa-times" ng-show="fglow > fg || fg > fghi"></i>
                           <br>
                           <span>ABV: </span>
                           <span>{[{abv}]}</span>
+                          <i class="check fa fa-check" ng-show="abvlow <= abv && abv <= abvhi"></i>
+                          <i class="cross fa fa-times" ng-show="abvlow > abv || abv > abvhi"></i>
                           <br>
                           <span>IBU: </span>
                           <span>{[{ibu}]}</span>
+                          <i class="check fa fa-check" ng-show="ibulow <= ibu && ibu <= ibuhi"></i>
+                          <i class="cross fa fa-times" ng-show="ibulow > ibu || ibu > ibuhi"></i>
                           <br>
                           <span>SRM: </span>
                           <span>{[{srm}]}</span>
+                          <i class="check fa fa-check" ng-show="srmlow <= srm && srm <= srmhi"></i>
+                          <i class="cross fa fa-times" ng-show="srmlow > srm || srm > srmhi"></i>
                       </div>
                   <!--
                       <label for="og">OG: {[{oglow}]}-{[{oghi}]}</label>
