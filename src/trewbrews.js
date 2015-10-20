@@ -34,8 +34,10 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
     $scope.$watch('[fermentablesarr, boilsize, size]', function () {
         var boilSize, batchSize;
 
-        boilSize = parseInt($scope.boilsize);
         batchSize = parseInt($scope.size);
+        // TODO: get input for boil size
+//        boilSize = parseInt($scope.boilsize);
+        boilSize = 1.36 * batchSize;
 
         $scope.srm = srm.calculateSrm(getFermentables(), getSizes(), boilSize, batchSize);
     }, true);
@@ -51,8 +53,10 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
 
         yeast = $scope.yeast && [JSON.parse($scope.yeast)] || [];
 
-        boilSize = $scope.boilsize && JSON.parse($scope.boilsize);
         batchSize = $scope.size && JSON.parse($scope.size);
+        // TODO: get input for boil size
+//        boilSize = $scope.boilsize && JSON.parse($scope.boilsize);
+        boilSize = $scope.size && 1.36 * batchSize;
         efficiency = $scope.efficiency && JSON.parse($scope.efficiency);
         equipment = $scope.equipment && JSON.parse($scope.equipment);
 
@@ -68,8 +72,10 @@ trewbrews.controller('calculator', ['$scope', 'srm', 'gravity', 'ibu', 'utils', 
         var boilSize, batchSize, time, equipment;
         var tmp;
 
-        boilSize = $scope.boilsize && JSON.parse($scope.boilsize);
         batchSize = $scope.size && JSON.parse($scope.size);
+        // TODO: get input for boil size
+//        boilSize = $scope.boilsize && JSON.parse($scope.boilsize);
+        boilSize = $scope.size && 1.36 * batchSize;
         time = $scope.time && JSON.parse($scope.time);
         equipment = $scope.equipment && JSON.parse($scope.equipment);
 
