@@ -18,11 +18,13 @@ app.use('/bower_components', express.static(__dirname + '/bower_components'));
 
 app.get('/', function (req, res) {
     res.render('main.hbs', {
-        fermentables: _.map(fermentables, function (fermentable) {
+        fermentables: _.sortBy(_.map(fermentables, function (fermentable) {
             return {
                 name: fermentable.name,
                 data: JSON.stringify(fermentable)
             };
+        }), function (fermentable) {
+            return fermentable.name;
         }),
         hops: _.chain(hops).
             filter(function (hop) {
@@ -34,6 +36,9 @@ app.get('/', function (req, res) {
                     data: JSON.stringify(hop)
                 };
             }).
+            sortBy(function (hops) {
+                return hops.name;
+            }).
             value(),
         yeasts: _.chain(yeasts).
             filter(function (yeast) {
@@ -44,6 +49,9 @@ app.get('/', function (req, res) {
                     name: yeast.name,
                     data: JSON.stringify(yeast)
                 };
+            }).
+            sortBy(function (yeast) {
+                return yeast.name;
             }).
             value(),
         styles: _.chain(styles).
