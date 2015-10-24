@@ -1,32 +1,19 @@
-var trewbrews = angular.module('trewbrews');
+import utils from './utils';
 
-trewbrews.service('ibu', ['utils', function (utils) {
-    var _ = window._;
-    var ibu = {
-    };
-
-    ibu.calculateIbu = function (hops, sizes, times, fermentables, fsizes, boilSize, batchSize, boilTime, og) {
-        console.log(hops);
-        hops = _.filter(hops, function (hop) {
+export default {
+    calculateIbu: function (recipe, og) {
+        var hops = recipe.hops.filter(function (hop) {
             return hop.alpha;
         });
         // TODO: for malt extracts we have bitterness in the fermentables
 
-        return _.reduce(hops, function (acc, hop, idx) {
-            return acc + ibuFromHop(hop, sizes[idx], batchSize, times[idx], og) / hops.length;
+        return hops.reduce(function (acc, hop) {
+            return acc + ibuFromHop(hop, recipe.batchSize, og) / hops.length;
         }, 0);
-    };
-
-    function ibuFromHop (hop, size, batchSize, boilTime, og) {
-        return 1.65 * Math.pow(0.000125, og - 1) * ((1 - Math.pow(Math.E, -0.04 * boilTime)) / 4.15) *
-            (((getAlpha(hop.alpha) / 100) * utils.gramsToOz(size) * 7490) / utils.litersToGallons(batchSize));
     }
+};
 
-    function getAlpha (alphaRange) {
-        var m = alphaRange.match(/^([0-9\.]*)% - ([0-9\.]*)%$/);
-
-        return (parseFloat(m[1]) + parseFloat(m[2])) / 2;
-    }
-
-    return ibu;
-}]);
+function ibuFromHop (hop, batchSize, og) {
+    return 1.65 * Math.pow(0.000125, og - 1) * ((1 - Math.pow(Math.E, -0.04 * hop.time)) / 4.15) *
+        (((hop.alpha / 100) * utils.gramsToOz(hop.grams) * 7490) / utils.litersToGallons(batchSize));
+}

@@ -1,0 +1,30 @@
+{
+    "boilSize": 25,
+    "batchSize": 23.1,
+    "efficiency": 50,
+    "time": 60,
+    "fermentables": [{
+        "name": "Muntons - Plain Wheat DME",
+        "ppg": 1.042,
+        "srm": 3,
+        "type": "Dry Malt Extracts",
+        "kgs": 3
+    }, {
+        "name": "German - Carapils",
+        "ppg": 1.035,
+        "srm": 1.3,
+        "type": "Grains",
+        "kgs": 1
+    }],
+    "hops": [{
+        "name": "Saaz",
+        "alpha": 3.5,
+        "use": "Boil",
+        "time": 60,
+        "grams": 45.5
+    }],
+    "yeast": {
+        "name": "Default",
+        "attenuation": 75
+    }
+}

@@ -2,18 +2,10 @@
   "name": "trewbrews-calc",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
-  "scripts": {
-    "start": "./node_modules/.bin/gulp prod"
-  },
+  "main": "index.js",
   "author": "sveto.n@gmail.com",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "express": "latest",
-    "gulp": "^3.9.0",
-    "gulp-bower": "0.0.10",
-    "gulp-develop-server": "^0.4.3",
-    "hbs": "latest",
-    "lodash": "latest"
+    "babel": "^5.8.23"
   }
 }

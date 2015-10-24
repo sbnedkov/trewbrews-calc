@@ -1,78 +1,62 @@
-var _ = require('lodash');
-var express = require('express');
-var hbs = require('hbs');
+import utils from './src/utils';
+import srm from './src/srm';
+import ibu from './src/ibu';
+import gravity from './src/gravity';
 
-var fermentables = require('./data/fermentables.json');
-var hops = require('./data/hops.json');
-var yeasts = require('./data/yeasts.json');
-var styles = require('./data/styles.json');
+// Defaults
+var batchSize = 21;
+var time = 60;
+var efficiency = 75;
 
-var app = express();
+process.stdin.setEncoding('utf8');
 
-app.set('view engine', 'html');
-app.engine('html', hbs.__express);
-app.use('/src', express.static(__dirname + '/src'));
-app.use('/img', express.static(__dirname + '/img'));
-app.use('/css', express.static(__dirname + '/css'));
-app.use('/bower_components', express.static(__dirname + '/bower_components'));
+var inputData = '';
+process.stdin.on('readable', function() {
+    var chunk = process.stdin.read();
+    if (chunk !== null) {
+        inputData += chunk;
+    }
+});
 
-app.get('/', function (req, res) {
-    res.render('main.hbs', {
-        fermentables: _.sortBy(_.map(fermentables, function (fermentable) {
-            return {
-                name: fermentable.name,
-                data: JSON.stringify(fermentable)
-            };
-        }), function (fermentable) {
-            return fermentable.name;
-        }),
-        hops: _.chain(hops).
-            filter(function (hop) {
-                return hop.alpha;
-            }).
-            map(function (hop) {
-                return {
-                    name: hop.name,
-                    data: JSON.stringify(hop)
-                };
-            }).
-            sortBy(function (hops) {
-                return hops.name;
-            }).
-            value(),
-        yeasts: _.chain(yeasts).
-            filter(function (yeast) {
-                return yeast.attenuation;
-            }).
-            map(function (yeast) {
-                return {
-                    name: yeast.name,
-                    data: JSON.stringify(yeast)
-                };
-            }).
-            sortBy(function (yeast) {
-                return yeast.name;
-            }).
-            value(),
-        styles: _.chain(styles).
-            filter(function (style) {
-                return _.all(style, function (value) {
-                    return value !== 'Variable';
-                });
-            }).
-            map(function (style) {
-                return {
-                    name: style.name,
-                    data: JSON.stringify(style)
-                };
-            }).
-            sortBy(function (style) {
-                return style.name;
-            }).
-            value()
+process.stdin.on('end', function() {
+    calculate(inputData, function (err, res) {
+        if (err) {
+            return process.stdout.write(JSON.stringify(err));
+        }
+
+        process.stdout.write(JSON.stringify(res));
     });
 });
 
-app.listen(process.env.PORT || 31314);
+function calculate (inputData, callback) {
+    var recipe;
+    var result = {
+        og: 0,
+        fg: 0,
+        ibu: 0,
+        abv: 0,
+        srm: 0
+    };
 
-console.log('Server started');
+    try {
+        recipe = JSON.parse(inputData);
+    } catch (err) {
+        return callback(err);
+    }
+
+    recipe.batchSize || (recipe.batchSize = batchSize);
+    recipe.boilSize || (recipe.boilSize = 1.36 * recipe.batchSize);
+    recipe.time || (recipe.time = time);
+    recipe.efficiency || (recipe.efficiency = efficiency);
+
+    result.srm = srm.calculateSrm(recipe);
+
+    var grav = gravity.calculateGravity(recipe);
+    result.og = utils.round(grav.og);
+    result.fg = utils.round(grav.fg);
+    result.abv = gravity.calculateAbv(grav);
+
+    result.ibu = utils.round(ibu.calculateIbu(recipe, result.og));
+
+    callback(null, result);
+}
