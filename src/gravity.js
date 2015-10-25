@@ -9,7 +9,7 @@ export default {
         og = p / 1000 + 1;
 
         // FG
-        if (!attenuation <= 0) {
+        if (!attenuation) {
             attenuation = 75;
         }
 
