@@ -21,7 +21,7 @@ export default {
         };
     },
     calculateAbv: function (grav) {
-        return utils.round(131 * (grav.og - grav.fg));
+        return utils.round((grav.og - grav.fg) * (125 * 1.05));
     }
 };
 

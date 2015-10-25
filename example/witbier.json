@@ -1,6 +1,6 @@
 {
     "boilSize": 25,
-    "batchSize": 23.1,
+    "batchSize": 23,
     "efficiency": 50,
     "time": 60,
     "fermentables": [{
@@ -21,7 +21,8 @@
         "alpha": 3.5,
         "use": "Boil",
         "time": 60,
-        "grams": 45.5
+        "type": "Leaf",
+        "grams": 45
     }],
     "yeast": {
         "name": "Default",
