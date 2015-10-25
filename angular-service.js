@@ -1,4 +1,3 @@
-import angular from 'angular';
 import calculator from './src/calculator';
 
 var app = angular.module('trewbrews', []);
