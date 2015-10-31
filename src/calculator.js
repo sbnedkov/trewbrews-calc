@@ -30,14 +30,14 @@ export default {
         recipe.time || (recipe.time = time);
         recipe.efficiency || (recipe.efficiency = efficiency);
 
-        result.srm = srm.calculateSrm(recipe);
+        result.srm = utils.round(srm.calculateSrm(recipe), 2);
 
         var grav = gravity.calculateGravity(recipe);
         result.og = utils.round(grav.og);
         result.fg = utils.round(grav.fg);
-        result.abv = gravity.calculateAbv(grav);
+        result.abv = utils.round(gravity.calculateAbv(grav), 2);
 
-        result.ibu = utils.round(ibu.calculateIbu(recipe, result.og));
+        result.ibu = utils.round(ibu.calculateIbu(recipe, result.og), 2);
 
         callback(null, result);
     }

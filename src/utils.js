@@ -8,7 +8,7 @@ export default {
     gramsToOz: function (grams) {
         return grams * 0.0352739619;
     },
-    round: function (n) {
-        return Math.round(1000 * n) / 1000;
+    round: function (n, d = 3) {
+        return Math.round(Math.pow(10, d) * n) / Math.pow(10, d);
     }
 };
